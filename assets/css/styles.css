@@ -28,6 +28,7 @@ body {
   font-weight: 600;
   transition: top 0.2s ease;
 }
+
 .skip-link:focus {
   top: 1rem;
 }
@@ -54,6 +55,7 @@ textarea:focus-visible {
   transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
   will-change: opacity, transform;
 }
+
 .reveal.reveal-visible {
   opacity: 1;
   transform: translateY(0);
@@ -62,11 +64,13 @@ textarea:focus-visible {
 .img-reveal img {
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
+
 .img-reveal {
   opacity: 0;
   transform: scale(1.04);
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
+
 .img-reveal.reveal-visible {
   opacity: 1;
   transform: scale(1);
@@ -76,12 +80,14 @@ textarea:focus-visible {
   html {
     scroll-behavior: auto;
   }
+
   .reveal,
   .img-reveal {
     opacity: 1 !important;
     transform: none !important;
     transition: none !important;
   }
+
   * {
     animation-duration: 0.001ms !important;
     animation-iteration-count: 1 !important;
@@ -96,7 +102,7 @@ textarea:focus-visible {
   box-shadow: 0 8px 30px -12px rgba(42, 24, 16, 0.18);
 }
 
-#site-header nav[aria-label='Primary'] > * {
+#site-header nav[aria-label='Primary']>* {
   white-space: nowrap;
 }
 
@@ -104,9 +110,11 @@ textarea:focus-visible {
   #site-header nav[aria-label='Primary'] {
     display: none !important;
   }
+
   #mobile-menu-btn {
     display: inline-flex !important;
   }
+
   #mobile-menu:not(.hidden) {
     display: block;
   }
@@ -119,9 +127,11 @@ textarea:focus-visible {
   font-size: 0.75rem;
   font-weight: 700;
 }
+
 #dark-toggle::after {
   content: 'Dark mode';
 }
+
 .dark #dark-toggle::after {
   content: 'Light mode';
 }
@@ -129,6 +139,7 @@ textarea:focus-visible {
 .nav-link-active {
   position: relative;
 }
+
 .nav-link-active::after {
   content: '';
   position: absolute;
@@ -150,9 +161,11 @@ textarea:focus-visible {
 .btn-wiggle {
   transform: translateY(0);
 }
+
 .btn-wiggle:hover {
   transform: translateY(-2px);
 }
+
 .btn-wiggle:active {
   transform: translateY(0);
 }
@@ -164,9 +177,11 @@ textarea:focus-visible {
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
+
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
 .scroll-smooth-x {
   scroll-behavior: smooth;
 }
@@ -182,14 +197,17 @@ textarea:focus-visible {
   color: #2a1810;
   transition: all 0.2s ease;
 }
+
 .carousel-btn:hover {
   border-color: #8e2a3b;
   color: #8e2a3b;
 }
+
 .dark .carousel-btn {
   border-color: rgba(251, 245, 236, 0.15);
   color: #fbf5ec;
 }
+
 .dark .carousel-btn:hover {
   border-color: #e3ac5e;
   color: #e3ac5e;
@@ -205,6 +223,7 @@ textarea:focus-visible {
   font-weight: 600;
   color: rgba(42, 24, 16, 0.7);
 }
+
 .dark .form-label {
   color: rgba(251, 245, 236, 0.7);
 }
@@ -219,22 +238,100 @@ textarea:focus-visible {
   color: #2a1810;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
+
+select.form-input option {
+  background: #fff;
+  color: #000;
+}
+
+input[type='date'].form-input::-webkit-calendar-picker-indicator {
+  filter: brightness(0) invert(1);
+  opacity: 1;
+  cursor: pointer;
+}
+
+input[type='number'].form-input::-webkit-inner-spin-button,
+input[type='number'].form-input::-webkit-outer-spin-button {
+  display: none;
+}
+
+.number-input-wrapper {
+  position: relative;
+}
+
+.number-input-wrapper .form-input {
+  padding-right: 4.25rem;
+}
+
+.number-input-controls {
+  position: absolute;
+  top: 1.5px;
+  right: 1.5px;
+  bottom: 1.5px;
+  display: flex;
+  flex-direction: column;
+  width: 2.75rem;
+  overflow: hidden;
+  border-radius: 0 0.75rem 0.75rem 0;
+}
+
+.number-input-button {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-bottom: 1px solid rgba(42, 24, 16, 0.14);
+  background: #8e2a3b;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.number-input-button:last-child {
+  border-bottom: 0;
+}
+
+.number-input-button:hover {
+  background: #6e1f2c;
+}
+
+.number-input-button:active {
+  background: #9c651f;
+}
+
+.dark .number-input-button {
+  border-color: rgba(251, 245, 236, 0.15);
+  background: #c6832e;
+  color: #180f09;
+}
+
+.dark .number-input-button:hover {
+  background: #e3ac5e;
+}
+
 .form-input::placeholder {
   color: rgba(42, 24, 16, 0.35);
 }
+
 .form-input:focus {
   outline: none;
   border-color: #8e2a3b;
   box-shadow: 0 0 0 3px rgba(142, 42, 59, 0.12);
 }
+
 .dark .form-input {
   background: rgba(251, 245, 236, 0.04);
   border-color: rgba(251, 245, 236, 0.15);
   color: #fbf5ec;
 }
+
 .dark .form-input::placeholder {
   color: rgba(251, 245, 236, 0.35);
 }
+
 .dark .form-input:focus {
   border-color: #e3ac5e;
   box-shadow: 0 0 0 3px rgba(227, 172, 94, 0.15);
@@ -247,10 +344,12 @@ textarea:focus-visible {
   color: #b3273c;
   font-weight: 500;
 }
+
 .form-field.has-error .form-input {
   border-color: #b3273c;
   box-shadow: 0 0 0 3px rgba(179, 39, 60, 0.12);
 }
+
 .form-field.has-error .form-error {
   display: block;
 }
@@ -261,6 +360,7 @@ textarea:focus-visible {
 [dir='rtl'] .rtl-flip {
   transform: scaleX(-1);
 }
+
 [dir='rtl'] .accordion-icon,
 [dir='rtl'] .dropdown-chevron {
   transform: none;
@@ -273,6 +373,7 @@ textarea:focus-visible {
   position: relative;
   min-height: 220px;
 }
+
 .slider-slide {
   position: absolute;
   inset: 0;
@@ -281,6 +382,7 @@ textarea:focus-visible {
   transform: translateY(12px);
   transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
 }
+
 .slider-slide.active {
   position: relative;
   opacity: 1;
@@ -294,11 +396,13 @@ textarea:focus-visible {
 .accordion-panel {
   animation: accordion-in 0.25s ease;
 }
+
 @keyframes accordion-in {
   from {
     opacity: 0;
     transform: translateY(-4px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -311,6 +415,7 @@ textarea:focus-visible {
 #page-loader {
   transition: opacity 0.6s ease;
 }
+
 .loader-ring {
   animation: none;
 }
@@ -327,16 +432,7 @@ textarea:focus-visible {
 /* --------------------------------------------------------------------- */
 .line-clamp-2 {
   display: -webkit-box;
-  -webkit-line-clamp:2;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-
-
-
-
-
-
-
-
-

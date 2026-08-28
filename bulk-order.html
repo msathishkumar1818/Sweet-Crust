@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
-<meta charset="UTF-8" />
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bulk Order | Sweet Crust Bakery &amp; Sweet Shop</title>
-  <meta name="description" content="Bulk bakery and sweets orders for weddings, corporate events, birthdays, festivals and celebrations." />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%A5%90</text></svg>" />
+  <meta name="description"
+    content="Bulk bakery and sweets orders for weddings, corporate events, birthdays, festivals and celebrations." />
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%A5%90</text></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+    rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -22,7 +27,7 @@
             inkdark: '#180F09',
             surface: '#3A241A',
             surfacedark: '#241610',
-            gold: { DEFAULT: '#C6832E', light: '#E3AC5E', dark: '#9C651F', 50:'#FBF1E2' },
+            gold: { DEFAULT: '#C6832E', light: '#E3AC5E', dark: '#9C651F', 50: '#FBF1E2' },
             berry: { DEFAULT: '#8E2A3B', light: '#B23F52', dark: '#6E1F2C' },
             pistachio: { DEFAULT: '#7C8F5E', light: '#A6B98A', dark: '#5C6D43' },
           },
@@ -43,818 +48,1122 @@
   <link rel="stylesheet" href="assets/css/styles.css" />
 
 </head>
-<body class="min-h-screen bg-cream font-body text-ink antialiased transition-colors duration-300 dark:bg-inkdark dark:text-cream ">
 
-<div id="page-loader" class="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-cream dark:bg-inkdark transition-opacity duration-700">
-  <div class="relative flex h-20 w-20 items-center justify-center">
-    <span class="loader-ring absolute inset-0 rounded-full border-[3px] border-gold/25"></span>
-    <span class="loader-ring absolute inset-0 rounded-full border-[3px] border-t-berry border-r-transparent border-b-transparent border-l-transparent animate-spin"></span>
-    <span class="font-display text-2xl text-ink dark:text-cream">S</span>
-  </div>
-  <p class="mt-6 font-display text-xl italic text-ink dark:text-cream">Sweet Crust</p>
-  <p class="mt-1 text-xs uppercase tracking-[0.3em] text-ink/50 dark:text-cream/50">Preparing something fresh&hellip;</p>
-</div>
+<body
+  class="min-h-screen bg-cream font-body text-ink antialiased transition-colors duration-300 dark:bg-inkdark dark:text-cream ">
 
-<a href="#main-content" class="skip-link">Skip to content</a>
-
-<header
-  id="site-header"
-  class="sticky top-0 z-50 border-b border-ink/5 bg-creamsoft/90 backdrop-blur-md transition-colors duration-300 dark:border-white/5 dark:bg-inkdark/90"
->
-  <div
-    class="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:px-8"
-  >
-
-    <!-- ================================================= -->
-    <!-- LOGO -->
-    <!-- ================================================= -->
-    <a
-      href="index.html"
-      class="flex shrink-0 items-center gap-2.5"
-      aria-label="Sweet Crust home"
-    >
-
+  <div id="page-loader"
+    class="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-cream dark:bg-inkdark transition-opacity duration-700">
+    <div class="relative flex h-20 w-20 items-center justify-center">
+      <span class="loader-ring absolute inset-0 rounded-full border-[3px] border-gold/25"></span>
       <span
-        class="relative inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-gold to-gold-dark text-cream shadow-warm"
-      >
-        <svg
-          viewBox="0 0 48 48"
-          fill="none"
-          class="h-6 w-6"
-          aria-hidden="true"
-        >
-          <path
-            d="M24 6c-3 0-5 2.4-5 5.4 0 1.5.6 2.8 1.6 3.8-4.8 1-8.6 4-8.6 8.4 0 .7.1 1.3.3 2H14c-3.3 0-6 2.7-6 6v2c0 3.3 2.7 6 6 6h20c3.3 0 6-2.7 6-6v-2c0-3.3-2.7-6-6-6h-1.3c.2-.7.3-1.3.3-2 0-4.4-3.8-7.4-8.6-8.4 1-.9 1.6-2.3 1.6-3.8C29 8.4 27 6 24 6z"
-            fill="currentColor"
-          />
-        </svg>
-      </span>
+        class="loader-ring absolute inset-0 rounded-full border-[3px] border-t-berry border-r-transparent border-b-transparent border-l-transparent animate-spin"></span>
+      <span class="font-display text-2xl text-ink dark:text-cream">S</span>
+    </div>
+    <p class="mt-6 font-display text-xl italic text-ink dark:text-cream">Sweet Crust</p>
+    <p class="mt-1 text-xs uppercase tracking-[0.3em] text-ink/50 dark:text-cream/50">Preparing something fresh&hellip;
+    </p>
+  </div>
 
-      <span class="flex flex-col justify-center leading-none">
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <header id="site-header"
+    class="sticky top-0 z-50 border-b border-ink/5 bg-creamsoft/90 backdrop-blur-md transition-colors duration-300 dark:border-white/5 dark:bg-inkdark/90">
+    <div class="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:px-8">
+
+      <!-- ================================================= -->
+      <!-- LOGO -->
+      <!-- ================================================= -->
+      <a href="index.html" class="flex shrink-0 items-center gap-2.5" aria-label="Sweet Crust home">
+
         <span
-          class="block font-display text-xl font-semibold tracking-tight text-ink dark:text-cream md:text-2xl"
-        >
-          Sweet Crust
+          class="relative inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-gold to-gold-dark text-cream shadow-warm">
+          <svg viewBox="0 0 48 48" fill="none" class="h-6 w-6" aria-hidden="true">
+            <path
+              d="M24 6c-3 0-5 2.4-5 5.4 0 1.5.6 2.8 1.6 3.8-4.8 1-8.6 4-8.6 8.4 0 .7.1 1.3.3 2H14c-3.3 0-6 2.7-6 6v2c0 3.3 2.7 6 6 6h20c3.3 0 6-2.7 6-6v-2c0-3.3-2.7-6-6-6h-1.3c.2-.7.3-1.3.3-2 0-4.4-3.8-7.4-8.6-8.4 1-.9 1.6-2.3 1.6-3.8C29 8.4 27 6 24 6z"
+              fill="currentColor" />
+          </svg>
         </span>
 
-        <!-- SMALLER SUBTITLE -->
-        <span
-          class="mt-1 block font-body text-[8px] font-medium uppercase tracking-[0.18em] text-berry dark:text-gold-light sm:text-[9px] md:text-[10px]"
-        >
-          Bakery &amp; Sweet Shop
-        </span>
-      </span>
+        <span class="flex flex-col justify-center leading-none">
+          <span class="block font-display text-xl font-semibold tracking-tight text-ink dark:text-cream md:text-2xl">
+            Sweet Crust
+          </span>
 
-    </a>
+          <!-- SMALLER SUBTITLE -->
+          <span
+            class="mt-1 block font-body text-[8px] font-medium uppercase tracking-[0.18em] text-berry dark:text-gold-light sm:text-[9px] md:text-[10px]">
+            Bakery &amp; Sweet Shop
+          </span>
+        </span>
+
+      </a>
+
+
+      <!-- ================================================= -->
+      <!-- DESKTOP NAVIGATION -->
+      <!-- ================================================= -->
+      <nav class="hidden items-center gap-5 xl:gap-7 lg:flex" aria-label="Primary">
+
+        <!-- HOME DROPDOWN -->
+        <div class="group relative">
+
+          <button type="button"
+            class="dropdown-toggle flex items-center gap-1.5 px-1 py-2 text-[15px] font-medium text-black transition-colors hover:text-berry dark:text-cream/80 dark:hover:text-gold-light"
+            aria-expanded="false" aria-haspopup="true">
+            Home
+
+            <svg viewBox="0 0 24 24" class="dropdown-chevron h-3.5 w-3.5 transition-transform duration-200" fill="none">
+              <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+
+          </button>
+
+
+          <div
+            class="dropdown-menu invisible absolute start-0 top-full z-20 mt-2 w-48 origin-top-start scale-95 rounded-2xl border border-ink/5 bg-creamsoft p-2 opacity-0 shadow-warm transition-all duration-200 dark:border-white/10 dark:bg-surfacedark">
+
+            <a href="index.html"
+              class="block rounded-xl px-3.5 py-2.5 text-sm font-medium text-black hover:bg-cream dark:text-cream dark:hover:bg-white/5">
+              Home 1 &mdash; Classic
+            </a>
+
+            <a href="home-2.html"
+              class="block rounded-xl px-3.5 py-2.5 text-sm font-medium text-black hover:bg-cream dark:text-cream dark:hover:bg-white/5">
+              Home 2 &mdash; Editorial
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <a href="about.html" data-nav="about"
+          class="nav-link relative px-1 py-2 text-[15px] font-medium text-black transition-colors hover:text-berry dark:text-cream dark:hover:text-gold-light">
+          About
+        </a>
+
+
+        <a href="products.html" data-nav="products"
+          class="nav-link relative px-1 py-2 text-[15px] font-medium text-black transition-colors hover:text-berry dark:text-cream dark:hover:text-gold-light">
+          Products
+        </a>
+
+
+        <a href="bulk-order.html" data-nav="bulk"
+          class="nav-link relative px-1 py-2 text-[15px] font-medium text-black transition-colors hover:text-berry dark:text-cream dark:hover:text-gold-light text-berry dark:text-gold-light nav-link-active">
+          Bulk Order
+        </a>
+
+
+        <a href="freshness-promise.html" data-nav="freshness"
+          class="nav-link relative px-1 py-2 text-[15px] font-medium text-black transition-colors hover:text-berry dark:text-cream dark:hover:text-gold-light">
+          Freshness Promise
+        </a>
+
+
+        <a href="contact.html" data-nav="contact"
+          class="nav-link relative px-1 py-2 text-[15px] font-medium text-black transition-colors hover:text-berry dark:text-cream dark:hover:text-gold-light">
+          Contact
+        </a>
+
+      </nav>
+
+
+      <!-- ================================================= -->
+      <!-- HEADER ACTIONS -->
+      <!-- ================================================= -->
+      <div class="flex shrink-0 items-center gap-2">
+
+
+        <!-- DARK MODE -->
+        <button id="dark-toggle" type="button"
+          class="hidden h-10 w-10 shrink-0 items-center justify-center rounded-full border border-ink/10 text-black transition-all duration-200 hover:border-berry hover:text-berry sm:inline-flex dark:border-white/10 dark:text-cream/80 dark:hover:border-gold-light dark:hover:text-gold-light"
+          aria-label="Toggle dark mode" aria-pressed="false">
+
+          <span class="icon-sun">
+            <svg viewBox="0 0 24 24" fill="none" class="h-5 w-5" aria-hidden="true">
+              <path
+                d="M12 3v2M12 19v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M3 12h2M19 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"
+                stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+              <circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.8" />
+            </svg>
+          </span>
+
+
+          <span class="icon-moon hidden">
+            <svg viewBox="0 0 24 24" fill="none" class="h-5 w-5" aria-hidden="true">
+              <path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5z" stroke="currentColor" stroke-width="1.8"
+                stroke-linejoin="round" stroke-linecap="round" />
+            </svg>
+          </span>
+
+        </button>
+
+
+        <!-- RTL / LTR -->
+        <button id="rtl-toggle" type="button"
+          class="hidden h-10 shrink-0 items-center gap-1.5 rounded-full border border-ink/10 px-3 text-xs font-semibold uppercase tracking-wide text-black transition-all duration-200 hover:border-berry hover:text-berry sm:inline-flex dark:border-white/10 dark:text-cream/80 dark:hover:border-gold-light dark:hover:text-gold-light"
+          aria-label="Toggle text direction">
+
+          <svg viewBox="0 0 24 24" fill="none" class="h-4.5 w-4.5" aria-hidden="true">
+            <circle cx="12" cy="12" r="8.4" stroke="currentColor" stroke-width="1.8" />
+
+            <path d="M3.6 12h16.8M12 3.6c2.6 2.3 4 5.3 4 8.4s-1.4 6.1-4 8.4c-2.6-2.3-4-5.3-4-8.4s1.4-6.1 4-8.4z"
+              stroke="currentColor" stroke-width="1.8" />
+          </svg>
+
+          <span id="rtl-label">
+            RTL
+          </span>
+
+        </button>
+
+
+        <!-- ORDER NOW -->
+        <a href="contact.html#order-form"
+          class="hidden h-10 shrink-0 items-center justify-center rounded-full bg-berry px-5 text-sm font-semibold text-cream shadow-warm transition-all duration-200 hover:bg-berry-dark hover:shadow-lg sm:inline-flex btn-wiggle">
+          Order Now
+        </a>
+
+
+        <!-- MOBILE MENU BUTTON -->
+        <button id="mobile-menu-btn" type="button"
+          class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-ink/10 text-ink lg:hidden dark:border-white/10 dark:text-cream"
+          aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+
+          <svg id="menu-icon-open" viewBox="0 0 24 24" class="h-5 w-5" fill="none">
+            <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+          </svg>
+
+
+          <svg id="menu-icon-close" viewBox="0 0 24 24" class="hidden h-5 w-5" fill="none">
+            <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+          </svg>
+
+        </button>
+
+      </div>
+
+    </div>
 
 
     <!-- ================================================= -->
-    <!-- DESKTOP NAVIGATION -->
+    <!-- MOBILE MENU -->
     <!-- ================================================= -->
-    <nav
-      class="hidden items-center gap-5 xl:gap-7 lg:flex"
-      aria-label="Primary"
-    >
+    <div id="mobile-menu"
+      class="mobile-menu-panel hidden border-t border-ink/5 bg-creamsoft lg:hidden dark:border-white/5 dark:bg-inkdark">
 
-      <!-- HOME DROPDOWN -->
-      <div class="group relative">
+      <div class="mx-auto max-w-7xl space-y-1 px-4 py-4 sm:px-6">
 
-        <button
-          type="button"
-          class="dropdown-toggle flex items-center gap-1.5 px-1 py-2 text-[15px] font-medium text-black transition-colors hover:text-berry dark:text-cream/80 dark:hover:text-gold-light"
-          aria-expanded="false"
-          aria-haspopup="true"
-        >
+        <!-- HOME -->
+        <button type="button" id="mobile-home-toggle"
+          class="flex w-full items-center justify-between rounded-xl px-4 py-3 text-[15px] font-medium text-black hover:bg-cream dark:text-cream dark:hover:bg-white/5"
+          aria-expanded="false">
+
           Home
 
-          <svg
-            viewBox="0 0 24 24"
-            class="dropdown-chevron h-3.5 w-3.5 transition-transform duration-200"
-            fill="none"
-          >
-            <path
-              d="M6 9l6 6 6-6"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
+          <svg viewBox="0 0 24 24" class="h-4 w-4 transition-transform duration-200" id="mobile-home-chevron"
+            fill="none">
+            <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
           </svg>
 
         </button>
 
 
-        <div
-          class="dropdown-menu invisible absolute start-0 top-full z-20 mt-2 w-48 origin-top-start scale-95 rounded-2xl border border-ink/5 bg-creamsoft p-2 opacity-0 shadow-warm transition-all duration-200 dark:border-white/10 dark:bg-surfacedark"
-        >
+        <!-- HOME SUBMENU -->
+        <div id="mobile-home-submenu" class="hidden ps-4">
 
-          <a
-            href="index.html"
-            class="block rounded-xl px-3.5 py-2.5 text-sm font-medium text-black hover:bg-cream dark:text-cream dark:hover:bg-white/5"
-          >
+          <a href="index.html"
+            class="block rounded-xl px-4 py-2.5 text-sm text-black hover:bg-cream dark:text-cream dark:hover:bg-white/5">
             Home 1 &mdash; Classic
           </a>
 
-          <a
-            href="home-2.html"
-            class="block rounded-xl px-3.5 py-2.5 text-sm font-medium text-black hover:bg-cream dark:text-cream dark:hover:bg-white/5"
-          >
+          <a href="home-2.html"
+            class="block rounded-xl px-4 py-2.5 text-sm text-black hover:bg-cream dark:text-cream dark:hover:bg-white/5">
             Home 2 &mdash; Editorial
           </a>
 
         </div>
 
-      </div>
 
-
-      <a
-        href="about.html"
-        data-nav="about"
-        class="nav-link relative px-1 py-2 text-[15px] font-medium text-black transition-colors hover:text-berry dark:text-cream dark:hover:text-gold-light"
-      >
-        About
-      </a>
-
-
-      <a
-        href="products.html"
-        data-nav="products"
-        class="nav-link relative px-1 py-2 text-[15px] font-medium text-black transition-colors hover:text-berry dark:text-cream dark:hover:text-gold-light"
-      >
-        Products
-      </a>
-
-
-      <a
-        href="bulk-order.html"
-        data-nav="bulk"
-        class="nav-link relative px-1 py-2 text-[15px] font-medium text-black transition-colors hover:text-berry dark:text-cream dark:hover:text-gold-light text-berry dark:text-gold-light nav-link-active"
-      >
-        Bulk Order
-      </a>
-
-
-      <a
-        href="freshness-promise.html"
-        data-nav="freshness"
-        class="nav-link relative px-1 py-2 text-[15px] font-medium text-black transition-colors hover:text-berry dark:text-cream dark:hover:text-gold-light"
-      >
-        Freshness Promise
-      </a>
-
-
-      <a
-        href="contact.html"
-        data-nav="contact"
-        class="nav-link relative px-1 py-2 text-[15px] font-medium text-black transition-colors hover:text-berry dark:text-cream dark:hover:text-gold-light"
-      >
-        Contact
-      </a>
-
-    </nav>
-
-
-    <!-- ================================================= -->
-    <!-- HEADER ACTIONS -->
-    <!-- ================================================= -->
-    <div class="flex shrink-0 items-center gap-2">
-
-
-      <!-- DARK MODE -->
-      <button
-        id="dark-toggle"
-        type="button"
-        class="hidden h-10 w-10 shrink-0 items-center justify-center rounded-full border border-ink/10 text-black transition-all duration-200 hover:border-berry hover:text-berry sm:inline-flex dark:border-white/10 dark:text-cream/80 dark:hover:border-gold-light dark:hover:text-gold-light"
-        aria-label="Toggle dark mode"
-        aria-pressed="false"
-      >
-
-        <span class="icon-sun">
-          <svg
-            viewBox="0 0 24 24"
-            fill="none"
-            class="h-5 w-5"
-            aria-hidden="true"
-          >
-            <path
-              d="M12 3v2M12 19v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M3 12h2M19 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"
-              stroke="currentColor"
-              stroke-width="1.8"
-              stroke-linecap="round"
-            />
-            <circle
-              cx="12"
-              cy="12"
-              r="4.2"
-              stroke="currentColor"
-              stroke-width="1.8"
-            />
-          </svg>
-        </span>
-
-
-        <span class="icon-moon hidden">
-          <svg
-            viewBox="0 0 24 24"
-            fill="none"
-            class="h-5 w-5"
-            aria-hidden="true"
-          >
-            <path
-              d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5z"
-              stroke="currentColor"
-              stroke-width="1.8"
-              stroke-linejoin="round"
-              stroke-linecap="round"
-            />
-          </svg>
-        </span>
-
-      </button>
-
-
-      <!-- RTL / LTR -->
-      <button
-        id="rtl-toggle"
-        type="button"
-        class="hidden h-10 shrink-0 items-center gap-1.5 rounded-full border border-ink/10 px-3 text-xs font-semibold uppercase tracking-wide text-black transition-all duration-200 hover:border-berry hover:text-berry sm:inline-flex dark:border-white/10 dark:text-cream/80 dark:hover:border-gold-light dark:hover:text-gold-light"
-        aria-label="Toggle text direction"
-      >
-
-        <svg
-          viewBox="0 0 24 24"
-          fill="none"
-          class="h-4.5 w-4.5"
-          aria-hidden="true"
-        >
-          <circle
-            cx="12"
-            cy="12"
-            r="8.4"
-            stroke="currentColor"
-            stroke-width="1.8"
-          />
-
-          <path
-            d="M3.6 12h16.8M12 3.6c2.6 2.3 4 5.3 4 8.4s-1.4 6.1-4 8.4c-2.6-2.3-4-5.3-4-8.4s1.4-6.1 4-8.4z"
-            stroke="currentColor"
-            stroke-width="1.8"
-          />
-        </svg>
-
-        <span id="rtl-label">
-          RTL
-        </span>
-
-      </button>
-
-
-      <!-- ORDER NOW -->
-      <a
-        href="contact.html#order-form"
-        class="hidden h-10 shrink-0 items-center justify-center rounded-full bg-berry px-5 text-sm font-semibold text-cream shadow-warm transition-all duration-200 hover:bg-berry-dark hover:shadow-lg sm:inline-flex btn-wiggle"
-      >
-        Order Now
-      </a>
-
-
-      <!-- MOBILE MENU BUTTON -->
-      <button
-        id="mobile-menu-btn"
-        type="button"
-        class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-ink/10 text-ink lg:hidden dark:border-white/10 dark:text-cream"
-        aria-label="Open menu"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
-      >
-
-        <svg
-          id="menu-icon-open"
-          viewBox="0 0 24 24"
-          class="h-5 w-5"
-          fill="none"
-        >
-          <path
-            d="M4 7h16M4 12h16M4 17h16"
-            stroke="currentColor"
-            stroke-width="1.8"
-            stroke-linecap="round"
-          />
-        </svg>
-
-
-        <svg
-          id="menu-icon-close"
-          viewBox="0 0 24 24"
-          class="hidden h-5 w-5"
-          fill="none"
-        >
-          <path
-            d="M6 6l12 12M18 6L6 18"
-            stroke="currentColor"
-            stroke-width="1.8"
-            stroke-linecap="round"
-          />
-        </svg>
-
-      </button>
-
-    </div>
-
-  </div>
-
-
-  <!-- ================================================= -->
-  <!-- MOBILE MENU -->
-  <!-- ================================================= -->
-  <div
-    id="mobile-menu"
-    class="mobile-menu-panel hidden border-t border-ink/5 bg-creamsoft lg:hidden dark:border-white/5 dark:bg-inkdark"
-  >
-
-    <div
-      class="mx-auto max-w-7xl space-y-1 px-4 py-4 sm:px-6"
-    >
-
-      <!-- HOME -->
-      <button
-        type="button"
-        id="mobile-home-toggle"
-        class="flex w-full items-center justify-between rounded-xl px-4 py-3 text-[15px] font-medium text-black hover:bg-cream dark:text-cream dark:hover:bg-white/5"
-        aria-expanded="false"
-      >
-
-        Home
-
-        <svg
-          viewBox="0 0 24 24"
-          class="h-4 w-4 transition-transform duration-200"
-          id="mobile-home-chevron"
-          fill="none"
-        >
-          <path
-            d="M6 9l6 6 6-6"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
-
-      </button>
-
-
-      <!-- HOME SUBMENU -->
-      <div
-        id="mobile-home-submenu"
-        class="hidden ps-4"
-      >
-
-        <a
-          href="index.html"
-          class="block rounded-xl px-4 py-2.5 text-sm text-black hover:bg-cream dark:text-cream dark:hover:bg-white/5"
-        >
-          Home 1 &mdash; Classic
+        <a href="about.html" data-nav="about"
+          class="block rounded-xl px-4 py-3 text-[15px] font-medium text-black hover:bg-cream dark:text-cream dark:hover:bg-white/5">
+          About
         </a>
 
-        <a
-          href="home-2.html"
-          class="block rounded-xl px-4 py-2.5 text-sm text-black hover:bg-cream dark:text-cream dark:hover:bg-white/5"
-        >
-          Home 2 &mdash; Editorial
+
+        <a href="products.html" data-nav="products"
+          class="block rounded-xl px-4 py-3 text-[15px] font-medium text-black hover:bg-cream dark:text-cream dark:hover:bg-white/5">
+          Products
         </a>
 
-      </div>
 
-
-      <a
-        href="about.html"
-        data-nav="about"
-        class="block rounded-xl px-4 py-3 text-[15px] font-medium text-black hover:bg-cream dark:text-cream dark:hover:bg-white/5"
-      >
-        About
-      </a>
-
-
-      <a
-        href="products.html"
-        data-nav="products"
-        class="block rounded-xl px-4 py-3 text-[15px] font-medium text-black hover:bg-cream dark:text-cream dark:hover:bg-white/5"
-      >
-        Products
-      </a>
-
-
-      <a
-        href="bulk-order.html"
-        data-nav="bulk"
-        class="block rounded-xl px-4 py-3 text-[15px] font-medium text-black hover:bg-cream dark:text-cream dark:hover:bg-white/5 bg-gold-50 text-berry dark:bg-white/5 dark:text-gold-light"
-      >
-        Bulk Order
-      </a>
-
-
-      <a
-        href="freshness-promise.html"
-        data-nav="freshness"
-        class="block rounded-xl px-4 py-3 text-[15px] font-medium text-black hover:bg-cream dark:text-cream dark:hover:bg-white/5"
-      >
-        Freshness Promise
-      </a>
-
-
-      <a
-        href="contact.html"
-        data-nav="contact"
-        class="block rounded-xl px-4 py-3 text-[15px] font-medium text-black hover:bg-cream dark:text-cream dark:hover:bg-white/5"
-      >
-        Contact
-      </a>
-
-
-      <!-- MOBILE ACTIONS -->
-      <div class="flex flex-col gap-2 pt-3">
-
-        <button
-          id="mobile-rtl-toggle"
-          type="button"
-          class="inline-flex w-full items-center justify-center rounded-full border border-ink/10 px-4 py-3 text-xs font-semibold text-black dark:border-white/10 dark:text-cream"
-        >
-          <span id="mobile-rtl-label">
-            Switch to RTL
-          </span>
-        </button>
-
-
-        <button
-          id="mobile-dark-toggle"
-          type="button"
-          class="inline-flex w-full items-center justify-center rounded-full border border-ink/10 px-4 py-3 text-xs font-semibold text-black dark:border-white/10 dark:text-cream"
-          aria-pressed="false"
-        >
-          <span id="mobile-dark-label">
-            Dark mode
-          </span>
-        </button>
-
-
-        <a
-          href="contact.html#order-form"
-          class="inline-flex w-full items-center justify-center rounded-full bg-berry px-5 py-3 text-sm font-semibold text-cream shadow-warm"
-        >
-          Order Now
+        <a href="bulk-order.html" data-nav="bulk"
+          class="block rounded-xl px-4 py-3 text-[15px] font-medium text-black hover:bg-cream dark:text-cream dark:hover:bg-white/5 bg-gold-50 text-berry dark:bg-white/5 dark:text-gold-light">
+          Bulk Order
         </a>
 
-      </div>
 
-    </div>
-
-  </div>
-
-</header>
+        <a href="freshness-promise.html" data-nav="freshness"
+          class="block rounded-xl px-4 py-3 text-[15px] font-medium text-black hover:bg-cream dark:text-cream dark:hover:bg-white/5">
+          Freshness Promise
+        </a>
 
 
-<main id="main-content">
+        <a href="contact.html" data-nav="contact"
+          class="block rounded-xl px-4 py-3 text-[15px] font-medium text-black hover:bg-cream dark:text-cream dark:hover:bg-white/5">
+          Contact
+        </a>
 
 
-<section class="relative overflow-hidden bg-cream dark:bg-inkdark" aria-label="Bulk order">
-  <div class="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:px-8 lg:py-24">
-    <div class="reveal">
-      <span class="reveal inline-flex items-center gap-2 rounded-full bg-berry/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-berry dark:bg-gold/15 dark:text-gold-light">
-    <span class="h-1.5 w-1.5 rounded-full bg-current"></span>For Events & Occasions
-  </span>
-      <h1 class="mt-5 font-display text-4xl font-semibold leading-tight text-black dark:text-cream sm:text-5xl">Bulk Orders For Every Guest List</h1>
-      <p class="mt-5 max-w-md text-base leading-relaxed text-black dark:text-cream">From office parties to wedding dessert tables, we plan, bake and deliver at scale &mdash; without losing the handcrafted quality of a single box.</p>
-      <div class="mt-8"><a href="#bulk-form" class="btn-wiggle group inline-flex items-center justify-center gap-2 rounded-full bg-berry px-7 py-3.5 text-sm font-semibold text-cream shadow-warm transition-all hover:bg-berry-dark ">
-    Request A Quote
-    <svg viewBox="0 0 24 24" class="h-4 w-4 transition-transform duration-300 rtl-flip group-hover:translate-x-1" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-  </a></div>
-    </div>
-    <div class="reveal img-reveal overflow-hidden rounded-[2rem] shadow-warm">
-      <img src="../assets/images/p50.jpg" alt="Celebration cake table set up for an event" class="h-[320px] w-full object-cover sm:h-[400px]" loading="eager" />
-    </div>
-  </div>
-</section>
+        <!-- MOBILE ACTIONS -->
+        <div class="flex flex-col gap-2 pt-3">
 
-<section class="bg-creamsoft py-16 dark:bg-surfacedark/40 lg:py-24" aria-label="Events we serve">
-  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div class="reveal flex flex-col mx-auto text-center items-center gap-4 max-w-2xl mx-auto">
-    <span class="reveal inline-flex items-center gap-2 rounded-full bg-berry/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-berry dark:bg-gold/15 dark:text-gold-light">
-    <span class="h-1.5 w-1.5 rounded-full bg-current"></span>Events We Serve
-  </span>
-    <h2 class="font-display text-3xl font-semibold leading-[1.15] text-black dark:text-cream sm:text-4xl lg:text-[2.75rem]">Wherever The Celebration Is, We Show Up Fresh</h2>
-    
-  </div>
-    <div class="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-5">
-      <div class="reveal rounded-3xl border border-ink/5 bg-creamsoft p-6 text-center shadow-sm dark:border-cream/10 dark:bg-inkdark/40">
-        <span class="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-berry/10 text-berry dark:bg-gold/15 dark:text-gold-light">
-          <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none"><path d="M12 20.5s-7.5-4.7-9.8-9.4C.6 7.6 2.7 4 6.3 4c2 0 3.6 1.1 4.6 2.6C11.9 5.1 13.5 4 15.5 4c3.6 0 5.7 3.6 4.1 7.1C17.3 15.8 12 20.5 12 20.5z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
-        </span>
-        <h3 class="mt-4 font-display text-base font-semibold text-black dark:text-cream">Weddings</h3>
-        <p class="mt-1.5 text-xs leading-relaxed text-black dark:text-cream">Dessert tables, favours and celebration cakes.</p>
-      </div>
-      <div class="reveal rounded-3xl border border-ink/5 bg-creamsoft p-6 text-center shadow-sm dark:border-cream/10 dark:bg-inkdark/40">
-        <span class="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-berry/10 text-berry dark:bg-gold/15 dark:text-gold-light">
-          <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none"><circle cx="9" cy="8.5" r="3" stroke="currentColor" stroke-width="1.6"/><path d="M3.5 19c1-3 3-4.5 5.5-4.5s4.5 1.5 5.5 4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="17" cy="9.5" r="2.3" stroke="currentColor" stroke-width="1.5"/><path d="M15.5 14.3c2.2.3 3.6 1.7 4.5 4.2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-        </span>
-        <h3 class="mt-4 font-display text-base font-semibold text-black dark:text-cream">Corporate Events</h3>
-        <p class="mt-1.5 text-xs leading-relaxed text-black dark:text-cream">Branded boxes and catering for offices and conferences.</p>
-      </div>
-      <div class="reveal rounded-3xl border border-ink/5 bg-creamsoft p-6 text-center shadow-sm dark:border-cream/10 dark:bg-inkdark/40">
-        <span class="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-berry/10 text-berry dark:bg-gold/15 dark:text-gold-light">
-          <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none"><path d="M4 9h16v11H4z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M4 9V6.5a2.5 2.5 0 0 1 2.5-2.5c2.5 0 4 2 5.5 5 1.5-3 3-5 5.5-5A2.5 2.5 0 0 1 20 6.5V9M12 9v11" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
-        </span>
-        <h3 class="mt-4 font-display text-base font-semibold text-black dark:text-cream">Birthday Parties</h3>
-        <p class="mt-1.5 text-xs leading-relaxed text-black dark:text-cream">Custom cakes, cupcake towers and party favours.</p>
-      </div>
-      <div class="reveal rounded-3xl border border-ink/5 bg-creamsoft p-6 text-center shadow-sm dark:border-cream/10 dark:bg-inkdark/40">
-        <span class="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-berry/10 text-berry dark:bg-gold/15 dark:text-gold-light">
-          <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none"><path d="M12 3l1.6 5.4L19 10l-5.4 1.6L12 17l-1.6-5.4L5 10l5.4-1.6L12 3z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
-        </span>
-        <h3 class="mt-4 font-display text-base font-semibold text-black dark:text-cream">Festivals</h3>
-        <p class="mt-1.5 text-xs leading-relaxed text-black dark:text-cream">Diwali, Eid and Christmas hampers at scale.</p>
-      </div>
-      <div class="reveal rounded-3xl border border-ink/5 bg-creamsoft p-6 text-center shadow-sm dark:border-cream/10 dark:bg-inkdark/40">
-        <span class="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-berry/10 text-berry dark:bg-gold/15 dark:text-gold-light">
-          <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none"><rect x="3.5" y="5" width="17" height="15" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M3.5 9.5h17M8 3v4M16 3v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
-        </span>
-        <h3 class="mt-4 font-display text-base font-semibold text-black dark:text-cream">Special Celebrations</h3>
-        <p class="mt-1.5 text-xs leading-relaxed text-black dark:text-cream">Anniversaries, baby showers and milestone events.</p>
-      </div>
-    </div>
-  </div>
-</section>
+          <button id="mobile-rtl-toggle" type="button"
+            class="inline-flex w-full items-center justify-center rounded-full border border-ink/10 px-4 py-3 text-xs font-semibold text-black dark:border-white/10 dark:text-cream">
+            <span id="mobile-rtl-label">
+              Switch to RTL
+            </span>
+          </button>
 
-<section class="py-16 lg:py-24" aria-label="Bulk order benefits">
-  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">
-      <div class="reveal">
-        <span class="reveal inline-flex items-center gap-2 rounded-full bg-berry/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-berry dark:bg-gold/15 dark:text-gold-light">
-    <span class="h-1.5 w-1.5 rounded-full bg-current"></span>Why Order In Bulk With Us
-  </span>
-        <h2 class="mt-5 font-display text-3xl font-semibold leading-tight text-ink dark:text-cream sm:text-4xl">Built for event planners and hosts.</h2>
-        <div class="img-reveal mt-8 overflow-hidden rounded-[2rem] shadow-warm">
-          <img src="../assets/images/p51.jpg" alt="Trays of bakery items prepared for a bulk order" class="h-64 w-full object-cover" loading="lazy" />
-        </div>
-      </div>
-      <div class="space-y-7">
-        <div class="reveal flex gap-5 border-b border-ink/10 pb-7 dark:border-cream/10 ">
-          <span class="font-display text-2xl font-semibold text-black dark:text-cream">01</span>
-          <div>
-            <h3 class="font-display text-lg font-semibold text-black dark:text-cream">Volume Pricing</h3>
-            <p class="mt-1.5 text-sm leading-relaxed text-black dark:text-cream">Transparent tiered pricing that scales with your order size.</p>
-          </div>
-        </div>
-        <div class="reveal flex gap-5 border-b border-ink/10 pb-7 dark:border-cream/10 ">
-          <span class="font-display text-2xl font-semibold text-black dark:text-cream">02</span>
-          <div>
-            <h3 class="font-display text-lg font-semibold text-black dark:text-cream">Dedicated Event Coordinator</h3>
-            <p class="mt-1.5 text-sm leading-relaxed text-black dark:text-cream">One point of contact from quote to delivery day.</p>
-          </div>
-        </div>
-        <div class="reveal flex gap-5 border-b border-ink/10 pb-7 dark:border-cream/10 ">
-          <span class="font-display text-2xl font-semibold text-black dark:text-cream">03</span>
-          <div>
-            <h3 class="font-display text-lg font-semibold text-black dark:text-cream">Flexible Menu Planning</h3>
-            <p class="mt-1.5 text-sm leading-relaxed text-black dark:text-cream">Mix sweets, bakes and chocolates to fit your guest list.</p>
-          </div>
-        </div>
-        <div class="reveal flex gap-5 border-b border-ink/10 pb-7 dark:border-cream/10 !border-0 !pb-0">
-          <span class="font-display text-2xl font-semibold text-black dark:text-cream">04</span>
-          <div>
-            <h3 class="font-display text-lg font-semibold text-ink dark:text-cream">On-Time Delivery</h3>
-            <p class="mt-1.5 text-sm leading-relaxed text-black dark:text-cream">Scheduled delivery slots, coordinated with your event timeline.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<section class="bg-ink py-16 text-cream dark:bg-surfacedark lg:py-24" aria-label="Custom menu and packaging">
-  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
-      <div class="reveal img-reveal overflow-hidden rounded-[2rem]">
-        <img src="../assets/images/p52.jpg" alt="Custom packaged gift boxes with branding ribbons" class="h-[340px] w-full object-cover" loading="lazy" />
-      </div>
-      <div class="reveal">
-        <span class="reveal inline-flex items-center gap-2 rounded-full bg-gold/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-gold dark:bg-gold/15 dark:text-gold-light">
-    <span class="h-1.5 w-1.5 rounded-full bg-current"></span>Custom Menu & Packaging
-  </span>
-        <h2 class="mt-5 font-display text-3xl font-semibold text-cream sm:text-4xl">Menus and packaging, tailored to your event.</h2>
-        <p class="mt-5 text-sm leading-relaxed text-cream sm:text-base">Choose from set bulk menus or build a custom spread with our team. Packaging can be branded with your company or event name, finished in your choice of colours.</p>
-        <ul class="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2">
-          <li class="flex items-center gap-2.5 text-sm text-cream">
-            <span class="h-1.5 w-1.5 shrink-0 rounded-full bg-gold-light"></span>Individually packed favours
-          </li>
-          <li class="flex items-center gap-2.5 text-sm text-cream">
-            <span class="h-1.5 w-1.5 shrink-0 rounded-full bg-gold-light"></span>Branded ribbon & tags
-          </li>
-          <li class="flex items-center gap-2.5 text-sm text-cream">
-            <span class="h-1.5 w-1.5 shrink-0 rounded-full bg-gold-light"></span>Dietary-friendly options
-          </li>
-          <li class="flex items-center gap-2.5 text-sm text-cream">
-            <span class="h-1.5 w-1.5 shrink-0 rounded-full bg-gold-light"></span>Tiered dessert displays
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+          <button id="mobile-dark-toggle" type="button"
+            class="inline-flex w-full items-center justify-center rounded-full border border-ink/10 px-4 py-3 text-xs font-semibold text-black dark:border-white/10 dark:text-cream"
+            aria-pressed="false">
+            <span id="mobile-dark-label">
+              Dark mode
+            </span>
+          </button>
 
-<section class="py-16 lg:py-24" aria-label="Bulk ordering process">
-  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div class="reveal flex flex-col mx-auto text-center items-center gap-4 max-w-2xl mx-auto">
-    <span class="reveal inline-flex items-center gap-2 rounded-full bg-berry/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-berry dark:bg-gold/15 dark:text-gold-light">
-    <span class="h-1.5 w-1.5 rounded-full bg-current"></span>The Process
-  </span>
-    <h2 class="font-display text-3xl font-semibold leading-[1.15] text-black dark:text-cream sm:text-4xl lg:text-[2.75rem]">Bulk Ordering, Simplified</h2>
-    
-  </div>
-    <div class="relative mt-14 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
-      <div class="pointer-events-none absolute inset-x-0 top-6 hidden h-px bg-ink/10 dark:bg-cream/10 lg:block"></div>
-      <div class="reveal relative text-center lg:text-start">
-        <span class="relative z-10 mx-auto flex h-12 w-12 items-center justify-center rounded-full border-2 border-berry bg-cream font-display text-sm font-semibold text-berry dark:border-gold-light dark:bg-inkdark dark:text-gold-light lg:mx-0">01</span>
-        <h3 class="mt-4 font-display text-lg font-semibold text-black dark:text-cream">Share Your Brief</h3>
-        <p class="mt-2 text-sm leading-relaxed text-black dark:text-cream">Tell us your event date, guest count and preferences.</p>
-      </div>
-      <div class="reveal relative text-center lg:text-start">
-        <span class="relative z-10 mx-auto flex h-12 w-12 items-center justify-center rounded-full border-2 border-berry bg-cream font-display text-sm font-semibold text-berry dark:border-gold-light dark:bg-inkdark dark:text-gold-light lg:mx-0">02</span>
-        <h3 class="mt-4 font-display text-lg font-semibold text-black dark:text-cream">Get A Tasting & Quote</h3>
-        <p class="mt-2 text-sm leading-relaxed text-black dark:text-cream">We propose a menu and pricing, with a tasting for larger orders.</p>
-      </div>
-      <div class="reveal relative text-center lg:text-start">
-        <span class="relative z-10 mx-auto flex h-12 w-12 items-center justify-center rounded-full border-2 border-berry bg-cream font-display text-sm font-semibold text-berry dark:border-gold-light dark:bg-inkdark dark:text-gold-light lg:mx-0">03</span>
-        <h3 class="mt-4 font-display text-lg font-semibold text-black dark:text-cream">Confirm & Schedule</h3>
-        <p class="mt-2 text-sm leading-relaxed text-black dark:text-cream">Lock in your order with a deposit and delivery slot.</p>
-      </div>
-      <div class="reveal relative text-center lg:text-start">
-        <span class="relative z-10 mx-auto flex h-12 w-12 items-center justify-center rounded-full border-2 border-berry bg-cream font-display text-sm font-semibold text-berry dark:border-gold-light dark:bg-inkdark dark:text-gold-light lg:mx-0">04</span>
-        <h3 class="mt-4 font-display text-lg font-semibold text-black dark:text-cream">Fresh Delivery</h3>
-        <p class="mt-2 text-sm leading-relaxed text-black dark:text-cream">Your order arrives fresh, packed and ready to serve.</p>
-      </div>
-    </div>
-  </div>
-</section>
 
-<section id="bulk-form" class="scroll-mt-24 bg-creamsoft py-16 dark:bg-surfacedark/40 lg:py-24" aria-label="Bulk order inquiry">
-  <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-    <div class="reveal flex flex-col mx-auto text-center items-center gap-4 max-w-2xl mx-auto">
-    <span class="reveal inline-flex items-center gap-2 rounded-full bg-berry/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-berry dark:bg-gold/15 dark:text-gold-light">
-    <span class="h-1.5 w-1.5 rounded-full bg-current"></span>Get A Quote
-  </span>
-    <h2 class="font-display text-3xl font-semibold leading-[1.15] text-black dark:text-cream sm:text-4xl lg:text-[2.75rem]">Tell Us About Your Event</h2>
-    
-  </div>
-    <form id="bulk-inquiry-form" novalidate class="reveal mt-10 grid grid-cols-1 gap-5 rounded-[2rem] border border-ink/5 bg-creamsoft p-6 shadow-warm dark:border-cream/10 dark:bg-inkdark/40   sm:grid-cols-2 sm:p-9">
-      <div class="form-field sm:col-span-1">
-        <label for="bulk-name" class="form-label  text-black dark:text-white">Full Name</label>
-        <input id="bulk-name" name="name" type="text" required class="form-input" placeholder="Your name" />
-        <p class="form-error">Please enter your full name.</p>
-      </div>
-      <div class="form-field sm:col-span-1">
-        <label for="bulk-email" class="form-label text-black dark:text-white">Email</label>
-        <input id="bulk-email" name="email" type="email" required class="form-input" placeholder="you@example.com" />
-        <p class="form-error">Please enter a valid email address.</p>
-      </div>
-      <div class="form-field sm:col-span-1">
-        <label for="bulk-phone" class="form-label text-black dark:text-white">Phone Number</label>
-        <input id="bulk-phone" name="phone" type="tel" required class="form-input" placeholder="+91 98765 43210" />
-        <p class="form-error">Please enter a valid phone number.</p>
-      </div>
-      <div class="form-field sm:col-span-1">
-        <label for="bulk-event" class="form-label text-black dark:text-white">Event Type</label>
-        <select id="bulk-event" name="event" required class="form-input">
-          <option value="">Select an event type</option>
-          <option>Wedding</option>
-          <option>Corporate Event</option>
-          <option>Birthday Party</option>
-          <option>Festival</option>
-          <option>Special Celebration</option>
-        </select>
-        <p class="form-error">Please select an event type.</p>
-      </div>
-      <div class="form-field sm:col-span-1">
-        <label for="bulk-date" class="form-label  text-black dark:text-white">Event Date</label>
-        <input id="bulk-date" name="date" type="date" required class="form-input" />
-        <p class="form-error">Please choose your event date.</p>
-      </div>
-      <div class="form-field sm:col-span-1">
-        <label for="bulk-guests" class="form-label  text-black dark:text-white">Number of Guests</label>
-        <input id="bulk-guests" name="guests" type="number" min="10" required class="form-input" placeholder="e.g. 150" />
-        <p class="form-error">Please enter an estimated guest count (10+).</p>
-      </div>
-      <div class="form-field sm:col-span-2">
-        <label for="bulk-message" class="form-label text-black dark:text-white">Tell Us More</label>
-        <textarea id="bulk-message" name="message" rows="4" required class="form-input" placeholder="Menu preferences, budget, packaging ideas..."></textarea>
-        <p class="form-error">Please share a few details about your event.</p>
-      </div>
-      <div class="sm:col-span-2">
-        <button type="submit" class="btn-wiggle group inline-flex w-full items-center justify-center gap-2 rounded-full bg-berry px-7 py-3.5 text-sm font-semibold text-cream shadow-warm transition-all hover:bg-berry-dark sm:w-auto">
-          Request A Quote
-        </button>
-        <p id="bulk-form-success" role="status" class="mt-4 hidden rounded-2xl bg-pistachio/15 px-4 py-3 text-sm font-medium text-pistachio-dark dark:text-pistachio-light">Thank you! Our events team will reach out within one business day.</p>
-      </div>
-    </form>
-  </div>
-</section>
-
-</main>
-
-<footer class="bg-ink text-cream dark:bg-inkdark">
-  <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
-    <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr]">
-      <div>
-        <a href="index.html" class="flex items-center gap-3" aria-label="Sweet Crust home">
-          <span class="relative inline-flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-gold to-gold-dark text-cream shrink-0">
-            
-          <svg
-          viewBox="0 0 48 48"
-          fill="none"
-          class="h-6 w-6"
-          aria-hidden="true">
-
-          <path
-            d="M24 6c-3 0-5 2.4-5 5.4 0 1.5.6 2.8 1.6 3.8-4.8 1-8.6 4-8.6 8.4 0 .7.1 1.3.3 2H14c-3.3 0-6 2.7-6 6v2c0 3.3 2.7 6 6 6h20c3.3 0 6-2.7 6-6v-2c0-3.3-2.7-6-6-6h-1.3c.2-.7.3-1.3.3-2 0-4.4-3.8-7.4-8.6-8.4 1-.9 1.6-2.3 1.6-3.8C29 8.4 27 6 24 6z"
-            fill="currentColor"/>
-
-        </svg>
-          </span>
-          <span class="flex flex-col justify-center leading-none">
-
-        <span
-          class="block font-display text-xl font-semibold tracking-tight text-white dark:text-cream md:text-2xl">
-
-          Sweet Crust
-
-        </span>
-
-        <!-- SMALLER SUBTITLE -->
-        <span
-          class="mt-1 block font-body text-[10px] uppercase tracking-[0.20em] text-berry dark:text-gold-light">
-
-          Bakery &amp; Sweet Shop
-
-        </span>
-
-      </span>
-
-          
+          <a href="contact.html#order-form"
+            class="inline-flex w-full items-center justify-center rounded-full bg-berry px-5 py-3 text-sm font-semibold text-cream shadow-warm">
+            Order Now
           </a>
-        <p class="mt-4 max-w-xs text-sm leading-relaxed text-cream">
-          A neighbourhood bakery and sweet shop baking traditional recipes and artisan breads fresh every morning, since 1998.
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <main id="main-content">
+
+
+    <section class="relative overflow-hidden bg-cream dark:bg-inkdark" aria-label="Bulk order">
+      <div
+        class="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:px-8 lg:py-24">
+        <div class="reveal">
+          <span
+            class="reveal inline-flex items-center gap-2 rounded-full bg-berry/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-berry dark:bg-gold/15 dark:text-gold-light">
+            <span class="h-1.5 w-1.5 rounded-full bg-current"></span>For Events & Occasions
+          </span>
+          <h1 class="mt-5 font-display text-4xl font-semibold leading-tight text-black dark:text-cream sm:text-5xl">Bulk
+            Orders For Every Guest List</h1>
+          <p class="mt-5 max-w-md text-base leading-relaxed text-black dark:text-cream">From office parties to wedding
+            dessert tables, we plan, bake and deliver at scale &mdash; without losing the handcrafted quality of a
+            single box.</p>
+          <div class="mt-8"><a href="#bulk-form"
+              class="btn-wiggle group inline-flex items-center justify-center gap-2 rounded-full bg-berry px-7 py-3.5 text-sm font-semibold text-cream shadow-warm transition-all hover:bg-berry-dark ">
+              Request A Quote
+              <svg viewBox="0 0 24 24"
+                class="h-4 w-4 transition-transform duration-300 rtl-flip group-hover:translate-x-1" fill="none">
+                <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a></div>
+        </div>
+        <div class="reveal img-reveal overflow-hidden rounded-[2rem] shadow-warm">
+          <img src="../assets/images/p50.jpg" alt="Celebration cake table set up for an event"
+            class="h-[320px] w-full object-cover sm:h-[400px]" loading="eager" />
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-creamsoft py-16 dark:bg-surfacedark/40 lg:py-24" aria-label="Events we serve">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="reveal flex flex-col mx-auto text-center items-center gap-4 max-w-2xl mx-auto">
+          <span
+            class="reveal inline-flex items-center gap-2 rounded-full bg-berry/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-berry dark:bg-gold/15 dark:text-gold-light">
+            <span class="h-1.5 w-1.5 rounded-full bg-current"></span>Events We Serve
+          </span>
+          <h2
+            class="font-display text-3xl font-semibold leading-[1.15] text-black dark:text-cream sm:text-4xl lg:text-[2.75rem]">
+            Wherever The Celebration Is, We Show Up Fresh</h2>
+
+        </div>
+        <div class="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-5">
+          <div
+            class="reveal rounded-3xl border border-ink/5 bg-creamsoft p-6 text-center shadow-sm dark:border-cream/10 dark:bg-inkdark/40">
+            <span
+              class="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-berry/10 text-berry dark:bg-gold/15 dark:text-gold-light">
+              <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none">
+                <path
+                  d="M12 20.5s-7.5-4.7-9.8-9.4C.6 7.6 2.7 4 6.3 4c2 0 3.6 1.1 4.6 2.6C11.9 5.1 13.5 4 15.5 4c3.6 0 5.7 3.6 4.1 7.1C17.3 15.8 12 20.5 12 20.5z"
+                  stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
+              </svg>
+            </span>
+            <h3 class="mt-4 font-display text-base font-semibold text-black dark:text-cream">Weddings</h3>
+            <p class="mt-1.5 text-xs leading-relaxed text-black dark:text-cream">Dessert tables, favours and celebration
+              cakes.</p>
+          </div>
+          <div
+            class="reveal rounded-3xl border border-ink/5 bg-creamsoft p-6 text-center shadow-sm dark:border-cream/10 dark:bg-inkdark/40">
+            <span
+              class="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-berry/10 text-berry dark:bg-gold/15 dark:text-gold-light">
+              <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none">
+                <circle cx="9" cy="8.5" r="3" stroke="currentColor" stroke-width="1.6" />
+                <path d="M3.5 19c1-3 3-4.5 5.5-4.5s4.5 1.5 5.5 4.5" stroke="currentColor" stroke-width="1.6"
+                  stroke-linecap="round" />
+                <circle cx="17" cy="9.5" r="2.3" stroke="currentColor" stroke-width="1.5" />
+                <path d="M15.5 14.3c2.2.3 3.6 1.7 4.5 4.2" stroke="currentColor" stroke-width="1.5"
+                  stroke-linecap="round" />
+              </svg>
+            </span>
+            <h3 class="mt-4 font-display text-base font-semibold text-black dark:text-cream">Corporate Events</h3>
+            <p class="mt-1.5 text-xs leading-relaxed text-black dark:text-cream">Branded boxes and catering for offices
+              and conferences.</p>
+          </div>
+          <div
+            class="reveal rounded-3xl border border-ink/5 bg-creamsoft p-6 text-center shadow-sm dark:border-cream/10 dark:bg-inkdark/40">
+            <span
+              class="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-berry/10 text-berry dark:bg-gold/15 dark:text-gold-light">
+              <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none">
+                <path d="M4 9h16v11H4z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
+                <path d="M4 9V6.5a2.5 2.5 0 0 1 2.5-2.5c2.5 0 4 2 5.5 5 1.5-3 3-5 5.5-5A2.5 2.5 0 0 1 20 6.5V9M12 9v11"
+                  stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
+              </svg>
+            </span>
+            <h3 class="mt-4 font-display text-base font-semibold text-black dark:text-cream">Birthday Parties</h3>
+            <p class="mt-1.5 text-xs leading-relaxed text-black dark:text-cream">Custom cakes, cupcake towers and party
+              favours.</p>
+          </div>
+          <div
+            class="reveal rounded-3xl border border-ink/5 bg-creamsoft p-6 text-center shadow-sm dark:border-cream/10 dark:bg-inkdark/40">
+            <span
+              class="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-berry/10 text-berry dark:bg-gold/15 dark:text-gold-light">
+              <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none">
+                <path d="M12 3l1.6 5.4L19 10l-5.4 1.6L12 17l-1.6-5.4L5 10l5.4-1.6L12 3z" stroke="currentColor"
+                  stroke-width="1.4" stroke-linejoin="round" />
+              </svg>
+            </span>
+            <h3 class="mt-4 font-display text-base font-semibold text-black dark:text-cream">Festivals</h3>
+            <p class="mt-1.5 text-xs leading-relaxed text-black dark:text-cream">Diwali, Eid and Christmas hampers at
+              scale.</p>
+          </div>
+          <div
+            class="reveal rounded-3xl border border-ink/5 bg-creamsoft p-6 text-center shadow-sm dark:border-cream/10 dark:bg-inkdark/40">
+            <span
+              class="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-berry/10 text-berry dark:bg-gold/15 dark:text-gold-light">
+              <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none">
+                <rect x="3.5" y="5" width="17" height="15" rx="2" stroke="currentColor" stroke-width="1.6" />
+                <path d="M3.5 9.5h17M8 3v4M16 3v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+              </svg>
+            </span>
+            <h3 class="mt-4 font-display text-base font-semibold text-black dark:text-cream">Special Celebrations</h3>
+            <p class="mt-1.5 text-xs leading-relaxed text-black dark:text-cream">Anniversaries, baby showers and
+              milestone events.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 lg:py-24" aria-label="Bulk order benefits">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">
+          <div class="reveal">
+            <span
+              class="reveal inline-flex items-center gap-2 rounded-full bg-berry/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-berry dark:bg-gold/15 dark:text-gold-light">
+              <span class="h-1.5 w-1.5 rounded-full bg-current"></span>Why Order In Bulk With Us
+            </span>
+            <h2 class="mt-5 font-display text-3xl font-semibold leading-tight text-ink dark:text-cream sm:text-4xl">
+              Built for event planners and hosts.</h2>
+            <div class="img-reveal mt-8 overflow-hidden rounded-[2rem] shadow-warm">
+              <img src="../assets/images/p51.jpg" alt="Trays of bakery items prepared for a bulk order"
+                class="h-64 w-full object-cover" loading="lazy" />
+            </div>
+          </div>
+          <div class="space-y-7">
+            <div class="reveal flex gap-5 border-b border-ink/10 pb-7 dark:border-cream/10 ">
+              <span class="font-display text-2xl font-semibold text-black dark:text-cream">01</span>
+              <div>
+                <h3 class="font-display text-lg font-semibold text-black dark:text-cream">Volume Pricing</h3>
+                <p class="mt-1.5 text-sm leading-relaxed text-black dark:text-cream">Transparent tiered pricing that
+                  scales with your order size.</p>
+              </div>
+            </div>
+            <div class="reveal flex gap-5 border-b border-ink/10 pb-7 dark:border-cream/10 ">
+              <span class="font-display text-2xl font-semibold text-black dark:text-cream">02</span>
+              <div>
+                <h3 class="font-display text-lg font-semibold text-black dark:text-cream">Dedicated Event Coordinator
+                </h3>
+                <p class="mt-1.5 text-sm leading-relaxed text-black dark:text-cream">One point of contact from quote to
+                  delivery day.</p>
+              </div>
+            </div>
+            <div class="reveal flex gap-5 border-b border-ink/10 pb-7 dark:border-cream/10 ">
+              <span class="font-display text-2xl font-semibold text-black dark:text-cream">03</span>
+              <div>
+                <h3 class="font-display text-lg font-semibold text-black dark:text-cream">Flexible Menu Planning</h3>
+                <p class="mt-1.5 text-sm leading-relaxed text-black dark:text-cream">Mix sweets, bakes and chocolates to
+                  fit your guest list.</p>
+              </div>
+            </div>
+            <div class="reveal flex gap-5 border-b border-ink/10 pb-7 dark:border-cream/10 !border-0 !pb-0">
+              <span class="font-display text-2xl font-semibold text-black dark:text-cream">04</span>
+              <div>
+                <h3 class="font-display text-lg font-semibold text-ink dark:text-cream">On-Time Delivery</h3>
+                <p class="mt-1.5 text-sm leading-relaxed text-black dark:text-cream">Scheduled delivery slots,
+                  coordinated with your event timeline.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-ink py-16 text-cream dark:bg-surfacedark lg:py-24" aria-label="Custom menu and packaging">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
+          <div class="reveal img-reveal overflow-hidden rounded-[2rem]">
+            <img src="../assets/images/p52.jpg" alt="Custom packaged gift boxes with branding ribbons"
+              class="h-[340px] w-full object-cover" loading="lazy" />
+          </div>
+          <div class="reveal">
+            <span
+              class="reveal inline-flex items-center gap-2 rounded-full bg-gold/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-gold dark:bg-gold/15 dark:text-gold-light">
+              <span class="h-1.5 w-1.5 rounded-full bg-current"></span>Custom Menu & Packaging
+            </span>
+            <h2 class="mt-5 font-display text-3xl font-semibold text-cream sm:text-4xl">Menus and packaging, tailored to
+              your event.</h2>
+            <p class="mt-5 text-sm leading-relaxed text-cream sm:text-base">Choose from set bulk menus or build a custom
+              spread with our team. Packaging can be branded with your company or event name, finished in your choice of
+              colours.</p>
+            <ul class="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2">
+              <li class="flex items-center gap-2.5 text-sm text-cream">
+                <span class="h-1.5 w-1.5 shrink-0 rounded-full bg-gold-light"></span>Individually packed favours
+              </li>
+              <li class="flex items-center gap-2.5 text-sm text-cream">
+                <span class="h-1.5 w-1.5 shrink-0 rounded-full bg-gold-light"></span>Branded ribbon & tags
+              </li>
+              <li class="flex items-center gap-2.5 text-sm text-cream">
+                <span class="h-1.5 w-1.5 shrink-0 rounded-full bg-gold-light"></span>Dietary-friendly options
+              </li>
+              <li class="flex items-center gap-2.5 text-sm text-cream">
+                <span class="h-1.5 w-1.5 shrink-0 rounded-full bg-gold-light"></span>Tiered dessert displays
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 lg:py-24" aria-label="Bulk ordering process">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="reveal flex flex-col mx-auto text-center items-center gap-4 max-w-2xl mx-auto">
+          <span
+            class="reveal inline-flex items-center gap-2 rounded-full bg-berry/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-berry dark:bg-gold/15 dark:text-gold-light">
+            <span class="h-1.5 w-1.5 rounded-full bg-current"></span>The Process
+          </span>
+          <h2
+            class="font-display text-3xl font-semibold leading-[1.15] text-black dark:text-cream sm:text-4xl lg:text-[2.75rem]">
+            Bulk Ordering, Simplified</h2>
+
+        </div>
+        <div class="relative mt-14 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="pointer-events-none absolute inset-x-0 top-6 hidden h-px bg-ink/10 dark:bg-cream/10 lg:block">
+          </div>
+          <div class="reveal relative text-center lg:text-start">
+            <span
+              class="relative z-10 mx-auto flex h-12 w-12 items-center justify-center rounded-full border-2 border-berry bg-cream font-display text-sm font-semibold text-berry dark:border-gold-light dark:bg-inkdark dark:text-gold-light lg:mx-0">01</span>
+            <h3 class="mt-4 font-display text-lg font-semibold text-black dark:text-cream">Share Your Brief</h3>
+            <p class="mt-2 text-sm leading-relaxed text-black dark:text-cream">Tell us your event date, guest count and
+              preferences.</p>
+          </div>
+          <div class="reveal relative text-center lg:text-start">
+            <span
+              class="relative z-10 mx-auto flex h-12 w-12 items-center justify-center rounded-full border-2 border-berry bg-cream font-display text-sm font-semibold text-berry dark:border-gold-light dark:bg-inkdark dark:text-gold-light lg:mx-0">02</span>
+            <h3 class="mt-4 font-display text-lg font-semibold text-black dark:text-cream">Get A Tasting & Quote</h3>
+            <p class="mt-2 text-sm leading-relaxed text-black dark:text-cream">We propose a menu and pricing, with a
+              tasting for larger orders.</p>
+          </div>
+          <div class="reveal relative text-center lg:text-start">
+            <span
+              class="relative z-10 mx-auto flex h-12 w-12 items-center justify-center rounded-full border-2 border-berry bg-cream font-display text-sm font-semibold text-berry dark:border-gold-light dark:bg-inkdark dark:text-gold-light lg:mx-0">03</span>
+            <h3 class="mt-4 font-display text-lg font-semibold text-black dark:text-cream">Confirm & Schedule</h3>
+            <p class="mt-2 text-sm leading-relaxed text-black dark:text-cream">Lock in your order with a deposit and
+              delivery slot.</p>
+          </div>
+          <div class="reveal relative text-center lg:text-start">
+            <span
+              class="relative z-10 mx-auto flex h-12 w-12 items-center justify-center rounded-full border-2 border-berry bg-cream font-display text-sm font-semibold text-berry dark:border-gold-light dark:bg-inkdark dark:text-gold-light lg:mx-0">04</span>
+            <h3 class="mt-4 font-display text-lg font-semibold text-black dark:text-cream">Fresh Delivery</h3>
+            <p class="mt-2 text-sm leading-relaxed text-black dark:text-cream">Your order arrives fresh, packed and
+              ready to serve.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="bulk-form" class="scroll-mt-24 bg-creamsoft py-16 dark:bg-surfacedark/40 lg:py-24"
+      aria-label="Bulk order inquiry">
+      <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+        <div class="reveal flex flex-col mx-auto text-center items-center gap-4 max-w-2xl mx-auto">
+          <span
+            class="reveal inline-flex items-center gap-2 rounded-full bg-berry/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-berry dark:bg-gold/15 dark:text-gold-light">
+            <span class="h-1.5 w-1.5 rounded-full bg-current"></span>Get A Quote
+          </span>
+          <h2
+            class="font-display text-3xl font-semibold leading-[1.15] text-black dark:text-cream sm:text-4xl lg:text-[2.75rem]">
+            Tell Us About Your Event</h2>
+
+        </div>
+        <form id="bulk-inquiry-form" novalidate
+          class="reveal mt-10 grid grid-cols-1 gap-5 rounded-[2rem] border border-ink/5 bg-creamsoft p-6 shadow-warm dark:border-cream/10 dark:bg-inkdark/40   sm:grid-cols-2 sm:p-9">
+          <div class="form-field sm:col-span-1">
+            <label for="bulk-name" class="form-label  text-black dark:text-white">Full Name</label>
+            <input id="bulk-name" name="name" type="text" required class="form-input" placeholder="Your name" />
+            <p class="form-error">Please enter your full name.</p>
+          </div>
+          <div class="form-field sm:col-span-1">
+            <label for="bulk-email" class="form-label text-black dark:text-white">Email</label>
+            <input id="bulk-email" name="email" type="email" required class="form-input"
+              placeholder="you@example.com" />
+            <p class="form-error">Please enter a valid email address.</p>
+          </div>
+          <div class="form-field sm:col-span-1">
+            <label for="bulk-phone" class="form-label text-black dark:text-white">Phone Number</label>
+            <input id="bulk-phone" name="phone" type="tel" required class="form-input" placeholder="+91 98765 43210" />
+            <p class="form-error">Please enter a valid phone number.</p>
+          </div>
+          <div class="form-field sm:col-span-1">
+            <label for="bulk-event" class="form-label text-black dark:text-white">Event Type</label>
+            <select id="bulk-event" name="event" required class="form-input">
+              <option value="">Select an event type</option>
+              <option>Wedding</option>
+              <option>Corporate Event</option>
+              <option>Birthday Party</option>
+              <option>Festival</option>
+              <option>Special Celebration</option>
+            </select>
+            <p class="form-error">Please select an event type.</p>
+          </div>
+          <div class="form-field sm:col-span-1">
+            <label for="bulk-date" class="form-label  text-black dark:text-white">Event Date</label>
+            <input id="bulk-date" name="date" type="date" required class="form-input" />
+            <p class="form-error">Please choose your event date.</p>
+          </div>
+          <div class="form-field sm:col-span-1">
+            <label for="bulk-guests" class="form-label  text-black dark:text-white">Number of Guests</label>
+            <div class="number-input-wrapper">
+              <input id="bulk-guests" name="guests" type="number" min="10" required class="form-input"
+                placeholder="e.g. 150" />
+              <div class="number-input-controls" aria-label="Adjust number of guests">
+                <button type="button" class="number-input-button" data-number-step="up"
+                  aria-label="Increase number of guests">+</button>
+                <button type="button" class="number-input-button" data-number-step="down"
+                  aria-label="Decrease number of guests">&minus;</button>
+              </div>
+            </div>
+            <p class="form-error">Please enter an estimated guest count (10+).</p>
+          </div>
+          <div class="form-field sm:col-span-2">
+            <label for="bulk-message" class="form-label text-black dark:text-white">Tell Us More</label>
+            <textarea id="bulk-message" name="message" rows="4" required class="form-input"
+              placeholder="Menu preferences, budget, packaging ideas..."></textarea>
+            <p class="form-error">Please share a few details about your event.</p>
+          </div>
+          <div class="sm:col-span-2">
+            <button type="submit"
+              class="btn-wiggle group inline-flex w-full items-center justify-center gap-2 rounded-full bg-berry px-7 py-3.5 text-sm font-semibold text-cream shadow-warm transition-all hover:bg-berry-dark sm:w-auto">
+              Request A Quote
+            </button>
+            <p id="bulk-form-success" role="status"
+              class="mt-4 hidden rounded-2xl bg-pistachio/15 px-4 py-3 text-sm font-medium text-pistachio-dark dark:text-pistachio-light">
+              Thank you! Our events team will reach out within one business day.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+
+
+
+
+<!-- ========================================================= -->
+<!-- BULK ORDER — INTRO -->
+<!-- ========================================================= -->
+<section class="bg-[#F7F1E8] py-16 dark:bg-surfacedark/40 lg:py-20">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+    <div class="flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
+
+      <div class="max-w-2xl">
+        <span
+          class="text-xs font-bold uppercase tracking-[0.22em] text-[#8B5E4B] dark:text-[#D9A98D]"
+        >
+          Bulk Orders
+        </span>
+
+        <h1
+          class="mt-4 font-serif text-4xl leading-tight text-[#3E2723] dark:text-white sm:text-5xl lg:text-6xl"
+        >
+          More people,
+          <span class="italic text-[#8B5E4B] dark:text-[#D9A98D]">
+            more sweetness.
+          </span>
+        </h1>
+      </div>
+
+      <p
+        class="max-w-md text-sm leading-7 text-black dark:text-white"
+      >
+        Whether it's a team gathering, celebration or large event,
+        we'll prepare every order with the same care as a single bake.
+      </p>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ========================================================= -->
+<!-- ORDER PURPOSE -->
+<!-- ========================================================= -->
+<section class="bg-[#F7F1E8] pb-20 dark:bg-surfacedark/40 lg:pb-28">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+    <div class="grid gap-5 lg:grid-cols-12">
+
+      <!-- Large Feature -->
+      <div
+        class="group relative min-h-[430px] overflow-hidden rounded-[2rem] lg:col-span-7"
+      >
+
+        <img
+          src="../assets/images/p63.jpg"
+          alt="Event bakery order"
+          class="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105"
+        />
+
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-[#241512]/90 via-[#241512]/20 to-transparent"
+        ></div>
+
+        <div class="absolute bottom-0 left-0 right-0 p-7 lg:p-9">
+
+          <span class="text-xs font-semibold uppercase tracking-[0.2em] text-white">
+            Designed for gatherings
+          </span>
+
+          <h2 class="mt-3 max-w-lg font-serif text-3xl leading-tight text-white sm:text-4xl">
+            Beautifully prepared orders,
+            <span class="italic">whatever the occasion.</span>
+          </h2>
+
+        </div>
+
+      </div>
+
+
+      <!-- Side Choices -->
+      <div class="grid gap-5 lg:col-span-5">
+
+        <!-- Corporate -->
+        <a
+          href="#bulk-form"
+          class="group flex items-center justify-between rounded-[2rem] bg-white p-7 transition duration-300 hover:-translate-y-1 dark:bg-[#241B17]"
+        >
+
+          <div class="flex items-center gap-5">
+
+            <div
+              class="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-[#F1E5D8] text-xl dark:bg-[#30241F]"
+            >
+              ✦
+            </div>
+
+            <div>
+              <p class="text-xs font-semibold uppercase tracking-widest text-[#8B5E4B]">
+                01
+              </p>
+
+              <h3 class="mt-1 font-serif text-2xl text-[#3E2723] dark:text-white">
+                Corporate
+              </h3>
+
+              <p class="mt-1 text-sm text-black dark:text-white">
+                Team treats & client gifting
+              </p>
+            </div>
+
+          </div>
+
+          <span
+            class="text-2xl text-[#6D4C41] transition group-hover:translate-x-1 dark:text-[#D9A98D]"
+          >
+            →
+          </span>
+
+        </a>
+
+
+        <!-- Celebration -->
+        <a
+          href="#bulk-form"
+          class="group flex items-center justify-between rounded-[2rem] bg-[#3E2723] p-7 transition duration-300 hover:-translate-y-1"
+        >
+
+          <div class="flex items-center gap-5">
+
+            <div
+              class="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-white/10 text-xl text-white"
+            >
+              ♡
+            </div>
+
+            <div>
+              <p class="text-xs font-semibold uppercase tracking-widest text-white/50">
+                02
+              </p>
+
+              <h3 class="mt-1 font-serif text-2xl text-white">
+                Celebrations
+              </h3>
+
+              <p class="mt-1 text-sm text-white">
+                Birthdays & special occasions
+              </p>
+            </div>
+
+          </div>
+
+          <span
+            class="text-2xl text-white transition group-hover:translate-x-1"
+          >
+            →
+          </span>
+
+        </a>
+
+
+        <!-- Events -->
+        <a
+          
+          class="group flex items-center justify-between rounded-[2rem] bg-[#D9A98D] p-7 transition duration-300 hover:-translate-y-1"
+        >
+
+          <div class="flex items-center gap-5">
+
+            <div
+              class="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-white/30 text-xl text-[#3E2723]"
+            >
+              ✧
+            </div>
+
+            <div>
+              <p class="text-xs font-semibold uppercase tracking-widest text-[#3E2723]">
+                03
+              </p>
+
+              <h3 class="mt-1 font-serif text-2xl text-black">
+                Events
+              </h3>
+
+              <p class="mt-1 text-sm text-black">
+                Large gatherings & catering
+              </p>
+            </div>
+
+          </div>
+
+          <span
+            class="text-2xl text-[#3E2723] transition group-hover:translate-x-1"
+          >
+            →
+          </span>
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ========================================================= -->
+<!-- HOW BULK ORDER WORKS -->
+<!-- ========================================================= -->
+<section class="bg-white py-20 dark:bg-surfacedark/40 lg:py-28">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+    <div class="grid gap-12 lg:grid-cols-[0.75fr_1.25fr]">
+
+      <!-- Heading -->
+      <div>
+
+        <span
+          class="text-xs font-bold uppercase tracking-[0.22em] text-[#8B5E4B]"
+        >
+          Simple from start to finish
+        </span>
+
+        <h2
+          class="mt-4 font-serif text-4xl leading-tight text-[#3E2723] dark:text-white sm:text-5xl"
+        >
+          Your order,
+          <span class="italic text-[#8B5E4B] dark:text-[#D9A98D]">
+            our care.
+          </span>
+        </h2>
+
+        <p class="mt-5 max-w-sm text-sm leading-7 text-black dark:text-white">
+          We've kept the process simple so you can focus on your event,
+          not the logistics.Whether you're hosting a team event, planning a wedding, or bringing everyone together for a special day, Sweet Crust makes ordering for a crowd simple and stress-free.freshness, consistency and presentation in mind, so every guest gets something worth remembering.
         </p>
-        <div class="mt-6 flex items-center gap-3">
-          <a href="#" aria-label="instagram" class="flex h-9 w-9 items-center justify-center rounded-full border border-cream text-cream transition-colors hover:border-gold-light hover:text-gold-light"><svg viewBox="0 0 24 24" class="h-4 w-4" fill="none"><rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="3.6" stroke="currentColor" stroke-width="1.6"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor"/></svg></a><a href="#" aria-label="facebook" class="flex h-9 w-9 items-center justify-center rounded-full border border-cream text-cream transition-colors hover:border-gold-light hover:text-gold-light"><svg viewBox="0 0 24 24" class="h-4 w-4" fill="none"><path d="M14.5 8.5h2V5.6c-.4-.05-1.5-.15-2.8-.15-2.8 0-4.6 1.7-4.6 4.7v2.3H6.5v3.3h2.6V21h3.3v-5.3h2.7l.4-3.3h-3.1V10.5c0-1 .3-1.9 1.7-1.9z" fill="currentColor"/></svg></a><a href="#" aria-label="whatsapp" class="flex h-9 w-9 items-center justify-center rounded-full border border-cream text-cream transition-colors hover:border-gold-light hover:text-gold-light"><svg viewBox="0 0 24 24" class="h-4 w-4" fill="none"><path d="M12 3.5a8.4 8.4 0 0 0-7.2 12.7L3.5 20.5l4.5-1.2A8.4 8.4 0 1 0 12 3.5z" stroke="currentColor" stroke-width="1.5"/><path d="M8.8 8.6c.2-.5.4-.5.6-.5h.5c.2 0 .4 0 .5.4.2.5.6 1.6.7 1.7.1.2.1.3 0 .5-.1.2-.2.3-.4.5-.1.2-.3.3-.1.6.2.4.9 1.4 1.9 2.2 1.3 1.1 2.2 1.4 2.5 1.5.3.1.5.1.7-.1.2-.2.7-.8.9-1.1.2-.3.4-.2.6-.1.2.1 1.6.7 1.8.9.2.1.4.2.4.4 0 .2 0 .9-.4 1.4-.4.5-1.5 1-2.4.9-.9-.1-2.9-.9-4.4-2.4-1.7-1.8-2.6-3.4-2.8-3.9-.2-.5-.9-1.4-.6-2.1z" fill="currentColor"/></svg></a><a href="#" aria-label="youtube" class="flex h-9 w-9 items-center justify-center rounded-full border border-cream text-cream transition-colors hover:border-gold-light hover:text-gold-light"><svg viewBox="0 0 24 24" class="h-4 w-4" fill="none"><rect x="2.5" y="6" width="19" height="12" rx="3.2" stroke="currentColor" stroke-width="1.5"/><path d="M10.5 9.7v4.6l4-2.3-4-2.3z" fill="currentColor"/></svg></a>
+
+      </div>
+
+
+      <!-- Steps -->
+      <div class="divide-y divide-[#6D4C41]/10 dark:divide-white/10">
+
+        <!-- Step -->
+        <div class="group flex gap-6 py-6 first:pt-0">
+
+          <span
+            class="font-serif text-4xl text-[#D9A98D] transition group-hover:text-[#6D4C41]"
+          >
+            01
+          </span>
+
+          <div>
+            <h3 class="text-lg font-semibold text-black dark:text-white">
+              Tell us what you need
+            </h3>
+
+            <p class="mt-2 text-sm leading-6 text-black dark:text-white">
+              Share your event type, date, guest count and product preferences.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="group flex gap-6 py-6">
+
+          <span
+            class="font-serif text-4xl text-[#D9A98D] transition group-hover:text-[#6D4C41]"
+          >
+            02
+          </span>
+
+          <div>
+            <h3 class="text-lg font-semibold text-black dark:text-white">
+              We build your order
+            </h3>
+
+            <p class="mt-2 text-sm leading-6 text-black dark:text-white">
+              Our team recommends quantities, flavours and suitable options.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="group flex gap-6 py-6">
+
+          <span
+            class="font-serif text-4xl text-[#D9A98D] transition group-hover:text-[#6D4C41]"
+          >
+            03
+          </span>
+
+          <div>
+            <h3 class="text-lg font-semibold text-black dark:text-white">
+              We bake & prepare
+            </h3>
+
+            <p class="mt-2 text-sm leading-6 text-black dark:text-white">
+              Everything is prepared fresh and packed carefully for your event.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="group flex gap-6 py-6 last:pb-0">
+
+          <span
+            class="font-serif text-4xl text-[#D9A98D] transition group-hover:text-[#6D4C41]"
+          >
+            04
+          </span>
+
+          <div>
+            <h3 class="text-lg font-semibold text-black dark:text-white">
+              Ready for your moment
+            </h3>
+
+            <p class="mt-2 text-sm leading-6 text-black dark:text-white">
+              Your bulk order arrives ready to serve, share and enjoy.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+    
+
+  </main>
+
+  <footer class="bg-ink text-cream dark:bg-inkdark">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+      <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr]">
+        <div>
+          <a href="index.html" class="flex items-center gap-3" aria-label="Sweet Crust home">
+            <span
+              class="relative inline-flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-gold to-gold-dark text-cream shrink-0">
+
+              <svg viewBox="0 0 48 48" fill="none" class="h-6 w-6" aria-hidden="true">
+
+                <path
+                  d="M24 6c-3 0-5 2.4-5 5.4 0 1.5.6 2.8 1.6 3.8-4.8 1-8.6 4-8.6 8.4 0 .7.1 1.3.3 2H14c-3.3 0-6 2.7-6 6v2c0 3.3 2.7 6 6 6h20c3.3 0 6-2.7 6-6v-2c0-3.3-2.7-6-6-6h-1.3c.2-.7.3-1.3.3-2 0-4.4-3.8-7.4-8.6-8.4 1-.9 1.6-2.3 1.6-3.8C29 8.4 27 6 24 6z"
+                  fill="currentColor" />
+
+              </svg>
+            </span>
+            <span class="flex flex-col justify-center leading-none">
+
+              <span
+                class="block font-display text-xl font-semibold tracking-tight text-white dark:text-cream md:text-2xl">
+
+                Sweet Crust
+
+              </span>
+              <!-- SMALLER SUBTITLE -->
+              <span
+                class="mt-1 block font-body text-sm font-bold uppercase tracking-[0.15em] text-berry dark:text-gold-light">
+                Bakery &amp; Sweet Shop
+              </span>
+
+            </span>
+
+
+          </a>
+          <p class="mt-4 max-w-xs text-sm leading-relaxed text-cream">
+            A neighbourhood bakery and sweet shop baking traditional recipes and artisan breads fresh every morning,
+            since 1998.
+          </p>
+          <div class="mt-6 flex items-center gap-3">
+            <a href="#" aria-label="instagram"
+              class="flex h-9 w-9 items-center justify-center rounded-full border border-cream text-cream transition-colors hover:border-gold-light hover:text-gold-light"><svg
+                viewBox="0 0 24 24" class="h-4 w-4" fill="none">
+                <rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="currentColor" stroke-width="1.6" />
+                <circle cx="12" cy="12" r="3.6" stroke="currentColor" stroke-width="1.6" />
+                <circle cx="17.2" cy="6.8" r="1" fill="currentColor" />
+              </svg></a><a href="#" aria-label="facebook"
+              class="flex h-9 w-9 items-center justify-center rounded-full border border-cream text-cream transition-colors hover:border-gold-light hover:text-gold-light"><svg
+                viewBox="0 0 24 24" class="h-4 w-4" fill="none">
+                <path
+                  d="M14.5 8.5h2V5.6c-.4-.05-1.5-.15-2.8-.15-2.8 0-4.6 1.7-4.6 4.7v2.3H6.5v3.3h2.6V21h3.3v-5.3h2.7l.4-3.3h-3.1V10.5c0-1 .3-1.9 1.7-1.9z"
+                  fill="currentColor" />
+              </svg></a><a href="#" aria-label="whatsapp"
+              class="flex h-9 w-9 items-center justify-center rounded-full border border-cream text-cream transition-colors hover:border-gold-light hover:text-gold-light"><svg
+                viewBox="0 0 24 24" class="h-4 w-4" fill="none">
+                <path d="M12 3.5a8.4 8.4 0 0 0-7.2 12.7L3.5 20.5l4.5-1.2A8.4 8.4 0 1 0 12 3.5z" stroke="currentColor"
+                  stroke-width="1.5" />
+                <path
+                  d="M8.8 8.6c.2-.5.4-.5.6-.5h.5c.2 0 .4 0 .5.4.2.5.6 1.6.7 1.7.1.2.1.3 0 .5-.1.2-.2.3-.4.5-.1.2-.3.3-.1.6.2.4.9 1.4 1.9 2.2 1.3 1.1 2.2 1.4 2.5 1.5.3.1.5.1.7-.1.2-.2.7-.8.9-1.1.2-.3.4-.2.6-.1.2.1 1.6.7 1.8.9.2.1.4.2.4.4 0 .2 0 .9-.4 1.4-.4.5-1.5 1-2.4.9-.9-.1-2.9-.9-4.4-2.4-1.7-1.8-2.6-3.4-2.8-3.9-.2-.5-.9-1.4-.6-2.1z"
+                  fill="currentColor" />
+              </svg></a><a href="#" aria-label="youtube"
+              class="flex h-9 w-9 items-center justify-center rounded-full border border-cream text-cream transition-colors hover:border-gold-light hover:text-gold-light"><svg
+                viewBox="0 0 24 24" class="h-4 w-4" fill="none">
+                <rect x="2.5" y="6" width="19" height="12" rx="3.2" stroke="currentColor" stroke-width="1.5" />
+                <path d="M10.5 9.7v4.6l4-2.3-4-2.3z" fill="currentColor" />
+              </svg></a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="font-display text-base font-semibold text-cream">Quick Links</h3>
+          <ul class="mt-4 space-y-2.5 text-sm text-cream">
+            <li><a href="about.html" class="hover:text-gold-light transition-colors">About Us</a></li>
+            <li><a href="products.html" class="hover:text-gold-light transition-colors">Products</a></li>
+
+            <li><a href="bulk-order.html" class="hover:text-gold-light transition-colors">Bulk Order</a></li>
+            <li><a href="freshness-promise.html" class="hover:text-gold-light transition-colors">Freshness Promise</a>
+            </li>
+            <li><a href="contact.html" class="hover:text-gold-light transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-display text-base font-semibold text-cream">Categories</h3>
+          <ul class="mt-4 space-y-2.5 text-sm text-cream">
+            <li><a href="products.html#sweets" class="hover:text-gold-light transition-colors">Traditional Sweets</a>
+            </li>
+            <li><a href="products.html#bakery" class="hover:text-gold-light transition-colors">Freshly Baked Goods</a>
+            </li>
+            <li><a href="products.html#chocolates" class="hover:text-gold-light transition-colors">Artisan
+                Chocolates</a></li>
+            <li><a href="products.html#giftboxes" class="hover:text-gold-light transition-colors">Premium Dry Fruit
+                Boxes</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-display text-base font-semibold text-cream">Visit Us</h3>
+          <ul class="mt-4 space-y-3 text-sm text-cream">
+            <li class="flex gap-2.5"><span class="mt-0.5 text-gold-light">&#128205;</span><span>14 Crescent Bakers Lane,
+                Coimbatore, Tamil Nadu 641001</span></li>
+            <li class="flex gap-2.5"><span class="mt-0.5 text-gold-light">&#128222;</span><span>+91 98765 43210</span>
+            </li>
+            <li class="flex gap-2.5"><span
+                class="mt-0.5 text-gold-light">&#9993;</span><span>hello@sweetcrust.example</span></li>
+            <li class="flex gap-2.5"><span class="mt-0.5 text-gold-light">&#128337;</span><span>Mon&ndash;Sat: 7:00 AM
+                &ndash; 9:00 PM<br />Sunday: 8:00 AM &ndash; 6:00 PM</span></li>
+          </ul>
         </div>
       </div>
 
-      <div>
-        <h3 class="font-display text-base font-semibold text-cream">Quick Links</h3>
-        <ul class="mt-4 space-y-2.5 text-sm text-cream">
-          <li><a href="about.html" class="hover:text-gold-light transition-colors">About Us</a></li>
-          <li><a href="products.html" class="hover:text-gold-light transition-colors">Products</a></li>
-          
-          <li><a href="bulk-order.html" class="hover:text-gold-light transition-colors">Bulk Order</a></li>
-          <li><a href="freshness-promise.html" class="hover:text-gold-light transition-colors">Freshness Promise</a></li>
-          <li><a href="contact.html" class="hover:text-gold-light transition-colors">Contact</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h3 class="font-display text-base font-semibold text-cream">Categories</h3>
-        <ul class="mt-4 space-y-2.5 text-sm text-cream">
-          <li><a href="products.html#sweets" class="hover:text-gold-light transition-colors">Traditional Sweets</a></li>
-          <li><a href="products.html#bakery" class="hover:text-gold-light transition-colors">Freshly Baked Goods</a></li>
-          <li><a href="products.html#chocolates" class="hover:text-gold-light transition-colors">Artisan Chocolates</a></li>
-          <li><a href="products.html#giftboxes" class="hover:text-gold-light transition-colors">Premium Dry Fruit Boxes</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h3 class="font-display text-base font-semibold text-cream">Visit Us</h3>
-        <ul class="mt-4 space-y-3 text-sm text-cream">
-          <li class="flex gap-2.5"><span class="mt-0.5 text-gold-light">&#128205;</span><span>14 Crescent Bakers Lane, Coimbatore, Tamil Nadu 641001</span></li>
-          <li class="flex gap-2.5"><span class="mt-0.5 text-gold-light">&#128222;</span><span>+91 98765 43210</span></li>
-          <li class="flex gap-2.5"><span class="mt-0.5 text-gold-light">&#9993;</span><span>hello@sweetcrust.example</span></li>
-          <li class="flex gap-2.5"><span class="mt-0.5 text-gold-light">&#128337;</span><span>Mon&ndash;Sat: 7:00 AM &ndash; 9:00 PM<br/>Sunday: 8:00 AM &ndash; 6:00 PM</span></li>
-        </ul>
+      <div
+        class="mt-14 flex flex-col items-center justify-between gap-4 border-t border-cream pt-8 text-xs text-cream sm:flex-row">
+        <p>&copy; <span id="year"></span> Sweet Crust Bakery &amp; Sweet Shop. All rights reserved.</p>
+        <p>Handcrafted with &#10084; for people who love good food.</p>
       </div>
     </div>
+  </footer>
 
-    <div class="mt-14 flex flex-col items-center justify-between gap-4 border-t border-cream pt-8 text-xs text-cream sm:flex-row">
-      <p>&copy; <span id="year"></span> Sweet Crust Bakery &amp; Sweet Shop. All rights reserved.</p>
-      <p>Handcrafted with &#10084; for people who love good food.</p>
-    </div>
-  </div>
-</footer>
-
-<button id="back-to-top" type="button" aria-label="Back to top" class="fixed bottom-6 end-6 z-40 flex h-11 w-11 translate-y-4 items-center justify-center rounded-full bg-berry text-cream opacity-0 shadow-warm transition-all duration-300 pointer-events-none hover:bg-berry-dark">
-  <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-</button>
+  <button id="back-to-top" type="button" aria-label="Back to top"
+    class="fixed bottom-6 end-6 z-40 flex h-11 w-11 translate-y-4 items-center justify-center rounded-full bg-berry text-cream opacity-0 shadow-warm transition-all duration-300 pointer-events-none hover:bg-berry-dark">
+    <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none">
+      <path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round" />
+    </svg>
+  </button>
 
 
 
-<script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
+
 </html>

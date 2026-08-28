@@ -397,6 +397,18 @@
       var successId = form.id + '-success';
       var successEl = doc.getElementById(successId);
 
+      form.querySelectorAll('[data-number-step]').forEach(function (button) {
+        button.addEventListener('click', function () {
+          var input = button.closest('.number-input-wrapper').querySelector('input[type="number"]');
+          var min = input.min === '' ? -Infinity : Number(input.min);
+          var max = input.max === '' ? Infinity : Number(input.max);
+          var value = input.value === '' ? min : Number(input.value);
+          var nextValue = button.getAttribute('data-number-step') === 'up' ? value + 1 : value - 1;
+          input.value = String(Math.min(max, Math.max(min, nextValue)));
+          input.dispatchEvent(new Event('change', { bubbles: true }));
+        });
+      });
+
       form.addEventListener('submit', function (e) {
         e.preventDefault();
         var valid = true;
@@ -619,94 +631,94 @@
 
 document.addEventListener("DOMContentLoaded", function () {
 
-    const tabs = document.querySelectorAll("[data-showcase-tab]");
-    const image = document.querySelector("[data-showcase-image]");
-    const description = document.querySelector("[data-showcase-desc]");
-    const number = document.querySelector("[data-showcase-number]");
+  const tabs = document.querySelectorAll("[data-showcase-tab]");
+  const image = document.querySelector("[data-showcase-image]");
+  const description = document.querySelector("[data-showcase-desc]");
+  const number = document.querySelector("[data-showcase-number]");
 
-    if (!tabs.length || !image || !description) return;
-
-
-    tabs.forEach((tab, index) => {
-
-        tab.addEventListener("click", function () {
-
-            const newImage = this.dataset.img;
-            const newDescription = this.dataset.desc;
+  if (!tabs.length || !image || !description) return;
 
 
-            /* ==========================================
-               Remove active state from all tabs
-            ========================================== */
+  tabs.forEach((tab, index) => {
 
-            tabs.forEach(item => {
+    tab.addEventListener("click", function () {
 
-                item.setAttribute("aria-selected", "false");
-
-                item.classList.remove(
-                    "border-berry",
-                    "bg-berry/5"
-                );
-
-                item.classList.add(
-                    "border-black/10",
-                    "bg-transparent"
-                );
-
-                item.classList.remove(
-                    "dark:border-gold-light",
-                    "dark:bg-gold/10"
-                );
-
-            });
+      const newImage = this.dataset.img;
+      const newDescription = this.dataset.desc;
 
 
-            /* ==========================================
-               Add active state
-            ========================================== */
+      /* ==========================================
+         Remove active state from all tabs
+      ========================================== */
 
-            this.setAttribute("aria-selected", "true");
+      tabs.forEach(item => {
 
-            this.classList.remove(
-                "border-black/10",
-                "bg-transparent"
-            );
+        item.setAttribute("aria-selected", "false");
 
-            this.classList.add(
-                "border-berry",
-                "bg-berry/5"
-            );
+        item.classList.remove(
+          "border-berry",
+          "bg-berry/5"
+        );
+
+        item.classList.add(
+          "border-black/10",
+          "bg-transparent"
+        );
+
+        item.classList.remove(
+          "dark:border-gold-light",
+          "dark:bg-gold/10"
+        );
+
+      });
 
 
-            /* ==========================================
-               Image Fade Out
-            ========================================== */
+      /* ==========================================
+         Add active state
+      ========================================== */
 
-            image.classList.add("opacity-0");
+      this.setAttribute("aria-selected", "true");
+
+      this.classList.remove(
+        "border-black/10",
+        "bg-transparent"
+      );
+
+      this.classList.add(
+        "border-berry",
+        "bg-berry/5"
+      );
 
 
-            setTimeout(() => {
+      /* ==========================================
+         Image Fade Out
+      ========================================== */
 
-                image.src = newImage;
+      image.classList.add("opacity-0");
 
-                image.alt = this.querySelector(
-                    ".font-display"
-                )?.textContent || "Bakery product";
 
-                description.textContent = newDescription;
+      setTimeout(() => {
 
-                if (number) {
-                    number.textContent =
-                        String(index + 1).padStart(2, "0");
-                }
+        image.src = newImage;
 
-                image.classList.remove("opacity-0");
+        image.alt = this.querySelector(
+          ".font-display"
+        )?.textContent || "Bakery product";
 
-            }, 250);
+        description.textContent = newDescription;
 
-        });
+        if (number) {
+          number.textContent =
+            String(index + 1).padStart(2, "0");
+        }
+
+        image.classList.remove("opacity-0");
+
+      }, 250);
 
     });
+
+  });
 
 });
 
@@ -717,39 +729,39 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-(function(){
+(function () {
   var revealSelectors = '.io-fade, .io-left, .io-right, .io-scale, .zoom-slow-auto, .timeline-bar-fill, .io-stagger';
-  var io = new IntersectionObserver(function(entries){
-    entries.forEach(function(entry){
-      if(entry.isIntersecting){
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
         entry.target.classList.add('in-view');
         io.unobserve(entry.target);
       }
     });
   }, { threshold: 0.18 });
 
-  document.querySelectorAll(revealSelectors).forEach(function(el){ io.observe(el); });
+  document.querySelectorAll(revealSelectors).forEach(function (el) { io.observe(el); });
 
   var counters = document.querySelectorAll('[data-countup]');
-  var cio = new IntersectionObserver(function(entries){
-    entries.forEach(function(entry){
-      if(!entry.isIntersecting) return;
+  var cio = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (!entry.isIntersecting) return;
       var el = entry.target;
       var target = parseFloat(el.getAttribute('data-countup'));
       var suffix = el.getAttribute('data-suffix') || '';
       var duration = 1500;
       var startTime = null;
-      function step(ts){
-        if(!startTime) startTime = ts;
+      function step(ts) {
+        if (!startTime) startTime = ts;
         var progress = Math.min((ts - startTime) / duration, 1);
         var eased = 1 - Math.pow(1 - progress, 3);
         el.textContent = Math.floor(eased * target) + suffix;
-        if(progress < 1){ requestAnimationFrame(step); }
+        if (progress < 1) { requestAnimationFrame(step); }
         else { el.textContent = target + suffix; }
       }
       requestAnimationFrame(step);
       cio.unobserve(el);
     });
   }, { threshold: 0.4 });
-  counters.forEach(function(el){ cio.observe(el); });
+  counters.forEach(function (el) { cio.observe(el); });
 })();
