@@ -588,6 +588,101 @@
   }
 
   /* -------------------------------------------------------------------- */
+  /* Login modal                                                          */
+  /* -------------------------------------------------------------------- */
+  function initLoginModal() {
+    var modal = doc.getElementById('login-modal');
+    if (!modal) return;
+
+    var openBtns = doc.querySelectorAll('[data-login-open], #login-btn, #mobile-login-btn');
+    var closeBtns = modal.querySelectorAll('[data-modal-close]');
+    var tabBtns = modal.querySelectorAll('[data-login-tab]');
+    var signinForm = modal.querySelector('#login-signin-form');
+    var signupForm = modal.querySelector('#login-signup-form');
+
+    function openModal() {
+      modal.classList.remove('hidden');
+      doc.body.style.overflow = 'hidden';
+      var firstInput = modal.querySelector('input:not([type="hidden"])');
+      if (firstInput) setTimeout(function () { firstInput.focus(); }, 100);
+    }
+
+    function closeModal() {
+      modal.classList.add('hidden');
+      doc.body.style.overflow = '';
+    }
+
+    openBtns.forEach(function (btn) {
+      btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        openModal();
+      });
+    });
+
+    closeBtns.forEach(function (btn) {
+      btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        closeModal();
+      });
+    });
+
+    modal.addEventListener('click', function (e) {
+      if (e.target === modal) closeModal();
+    });
+
+    doc.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+        closeModal();
+      }
+    });
+
+    tabBtns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var target = btn.getAttribute('data-login-tab');
+        tabBtns.forEach(function (b) {
+          var isCurrent = b === btn;
+          b.classList.toggle('text-berry', isCurrent);
+          b.classList.toggle('border-b-2', isCurrent);
+          b.classList.toggle('border-berry', isCurrent);
+          b.classList.toggle('font-bold', isCurrent);
+          b.classList.toggle('text-ink/60', !isCurrent);
+          b.classList.toggle('dark:text-cream/60', !isCurrent);
+          b.classList.toggle('dark:text-gold-light', isCurrent);
+          b.classList.toggle('dark:border-gold-light', isCurrent);
+        });
+
+        if (signinForm && signupForm) {
+          if (target === 'signin') {
+            signinForm.classList.remove('hidden');
+            signupForm.classList.add('hidden');
+          } else {
+            signinForm.classList.add('hidden');
+            signupForm.classList.remove('hidden');
+          }
+        }
+      });
+    });
+
+    // Simple demo submit handling
+    var forms = modal.querySelectorAll('form');
+    forms.forEach(function (f) {
+      f.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var alertBox = modal.querySelector('.login-alert');
+        if (alertBox) {
+          alertBox.classList.remove('hidden');
+          setTimeout(function () {
+            closeModal();
+            alertBox.classList.add('hidden');
+          }, 1200);
+        } else {
+          closeModal();
+        }
+      });
+    });
+  }
+
+  /* -------------------------------------------------------------------- */
   /* Init                                                                  */
   /* -------------------------------------------------------------------- */
   function init() {
@@ -608,6 +703,7 @@
     initTestimonialSlider();
     initSpecialsCarousel();
     initFooterYear();
+    initLoginModal();
   }
 
   if (doc.readyState === 'loading') {

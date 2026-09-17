@@ -121,19 +121,7 @@ textarea:focus-visible {
 }
 
 #dark-toggle {
-  width: auto;
-  padding: 0 0.85rem;
-  gap: 0.45rem;
-  font-size: 0.75rem;
-  font-weight: 700;
-}
-
-#dark-toggle::after {
-  content: 'Dark mode';
-}
-
-.dark #dark-toggle::after {
-  content: 'Light mode';
+  display: inline-flex;
 }
 
 .nav-link-active {
@@ -435,4 +423,49 @@ input[type='number'].form-input::-webkit-outer-spin-button {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+/* --------------------------------------------------------------------- */
+/* Login Modal & Button                                                  */
+/* --------------------------------------------------------------------- */
+.btn-login {
+  transition: all 0.2s ease;
+}
+
+.btn-login:hover {
+  border-color: #8E2A3B;
+  color: #8E2A3B;
+}
+
+.dark .btn-login:hover {
+  border-color: #E3AC5E;
+  color: #E3AC5E;
+}
+
+#login-modal {
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+#login-modal.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+#login-modal:not(.hidden) {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+#login-modal:not(.hidden) .modal-content {
+  transform: scale(1) translateY(0);
+}
+
+#login-modal.hidden .modal-content {
+  transform: scale(0.95) translateY(8px);
+}
+
+.modal-content {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
