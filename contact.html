@@ -512,18 +512,18 @@
               placeholder="Eggless, sugar-free, allergies, etc." />
           </div>
           <div class="form-field sm:col-span-2">
-            <label for="c-message" class=" text-black dark:text-white">Message</label>
+            <label for="c-message" class="form-label text-black dark:text-white">Message</label>
             <textarea id="c-message" name="message" rows="4" required class="form-input"
               placeholder="Any other details we should know..."></textarea>
             <p class="form-error">Please add a short message for us.</p>
           </div>
-          <div class="sm:col-span-2">
+          <div class="sm:col-span-2 flex flex-col items-center justify-center text-center pt-2">
             <button type="submit"
-              class="btn-wiggle group inline-flex w-full items-center justify-center gap-2 rounded-full bg-berry px-7 py-3.5 text-sm font-semibold text-cream shadow-warm transition-all hover:bg-berry-dark sm:w-auto">
+              class="btn-wiggle group inline-flex w-full items-center justify-center gap-2 rounded-full bg-berry px-8 py-3.5 text-sm font-semibold text-cream shadow-warm transition-all hover:bg-berry-dark sm:w-auto">
               Submit Order Request
             </button>
             <p id="order-request-form-success" role="status"
-              class="mt-4 hidden rounded-2xl bg-pistachio/15 px-4 py-3 text-sm font-medium text-pistachio-dark dark:text-pistachio-light">
+              class="mt-4 hidden w-full rounded-2xl bg-pistachio/15 px-4 py-3 text-sm font-medium text-pistachio-dark dark:text-pistachio-light">
               Thank you! Your order request has been received &mdash; we'll confirm shortly.</p>
           </div>
         </form>

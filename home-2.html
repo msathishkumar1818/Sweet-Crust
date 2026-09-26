@@ -40,7 +40,7 @@
       },
     };
   </script>
-  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
 
 </head>
 <body class="min-h-screen bg-cream font-body text-ink antialiased transition-colors duration-300 dark:bg-inkdark dark:text-cream ">
@@ -620,40 +620,40 @@
 <main id="main-content">
 
 <!-- ============================================================ -->
-<!-- SECTION 1 — HERO : full-bleed bg image, bottom-aligned text -->
+<!-- SECTION 1 — HERO : centered layout, balanced responsive padding -->
 <!-- ============================================================ -->
 <section class="relative overflow-hidden bg-inkdark" aria-label="Hero">
   <div class="absolute inset-0">
-    <img src="../assets/images/p15.jpg" alt="Overhead spread of artisan pastries, breads and sweets" class="h-full w-full object-cover opacity-60" loading="eager" />
-    <div class="absolute inset-0 bg-gradient-to-t from-inkdark via-inkdark/50 to-inkdark/20"></div>
-    <div class="absolute inset-0 bg-gradient-to-r from-inkdark/40 via-inkdark/20 to-transparent"></div>
+    <img src="assets/images/p15.jpg" alt="Overhead spread of artisan pastries, breads and sweets" class="h-full w-full object-cover opacity-50" loading="eager" />
+    <div class="absolute inset-0 bg-gradient-to-t from-inkdark/95 via-inkdark/65 to-inkdark/80"></div>
+    <div class="absolute inset-0 bg-inkdark/30"></div>
   </div>
-  <div class="relative mx-auto flex min-h-[86vh] max-w-7xl flex-col justify-end px-4 pb-16 pt-32 sm:px-6 lg:px-8 lg:pb-24">
-    <p class="reveal font-display text-sm italic tracking-wide text-gold-light">Editorial Edition &mdash; Autumn Menu</p>
-    <h1 class="reveal mt-4 max-w-3xl font-display text-[2.6rem] font-semibold leading-[1.05] text-white sm:text-6xl lg:text-7xl">
+  <div class="relative mx-auto flex min-h-[82vh] max-w-5xl flex-col items-center justify-center px-4 py-20 text-center sm:px-6 sm:py-24 lg:px-8 lg:py-28">
+    <p class="reveal font-display text-sm italic tracking-wide text-gold-light sm:text-base">Editorial Edition &mdash; Autumn Menu</p>
+    <h1 class="reveal mt-4 max-w-3xl font-display text-4xl font-semibold leading-[1.1] text-white sm:text-6xl lg:text-7xl">
       A slower kind<br class="hidden sm:block" /> of baking.
     </h1>
-    <p class="reveal mt-6 max-w-md text-sm leading-relaxed text-white sm:text-base">
+    <p class="reveal mx-auto mt-6 max-w-xl text-sm leading-relaxed text-cream/90 sm:text-base lg:text-lg">
       No shortcuts, no additives &mdash; just long ferments, hand lamination and recipes we refuse to rush. This is bread and sweets the way they used to be made.
     </p>
-    <div class="reveal mt-9 flex flex-col gap-3.5 xs:flex-row">
-      <a href="contact.html#order-form" class="btn-wiggle group inline-flex items-center justify-center gap-2 rounded-full bg-berry px-7 py-3.5 text-sm font-semibold text-cream shadow-warm transition-all hover:bg-berry-dark">
+    <div class="reveal mt-9 flex w-full flex-col items-center justify-center gap-3.5 sm:w-auto sm:flex-row">
+      <a href="contact.html#order-form" class="btn-wiggle group inline-flex w-full items-center justify-center gap-2 rounded-full bg-berry px-8 py-3.5 text-sm font-semibold text-cream shadow-warm transition-all hover:bg-berry-dark sm:w-auto">
         Order Now
         <svg viewBox="0 0 24 24" class="h-4 w-4 transition-transform duration-300 rtl-flip group-hover:translate-x-1" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
-      <a href="products.html" class="group inline-flex items-center justify-center gap-2 rounded-full border-2 border-cream/40 bg-cream/5 px-7 py-3.5 text-sm font-semibold text-white backdrop-blur-sm transition-all hover:bg-cream hover:text-ink">
+      <a href="products.html" class="group inline-flex w-full items-center justify-center gap-2 rounded-full border-2 border-cream/40 bg-cream/10 px-8 py-3.5 text-sm font-semibold text-white backdrop-blur-sm transition-all hover:bg-cream hover:text-ink sm:w-auto">
         Explore Our Treats
       </a>
     </div>
   </div>
-  <div class="reveal absolute bottom-8 end-4 hidden w-52 rounded-2xl border border-cream/15 bg-inkdark/60 p-4 backdrop-blur-md sm:block lg:end-8">
+  <div class="reveal absolute bottom-6 end-6 hidden w-52 rounded-2xl border border-cream/15 bg-inkdark/70 p-3.5 backdrop-blur-md xl:block">
     <div class="flex items-center gap-3">
-      <div class="img-reveal h-12 w-12 shrink-0 overflow-hidden rounded-full">
-        <img src="../assets/images/p16.jpg" alt="Assorted macarons" class="h-full w-full object-cover" />
+      <div class="img-reveal h-11 w-11 shrink-0 overflow-hidden rounded-full">
+        <img src="assets/images/p16.jpg" alt="Assorted macarons" class="h-full w-full object-cover" />
       </div>
-      <div>
-        <p class="text-[11px] text-white">This Week's Feature</p>
-        <p class="font-display text-sm font-semibold text-white">Rosewater Macarons</p>
+      <div class="text-start">
+        <p class="text-[10px] uppercase tracking-wider text-gold-light">This Week's Feature</p>
+        <p class="font-display text-xs font-semibold text-white">Rosewater Macarons</p>
       </div>
     </div>
   </div>
@@ -703,28 +703,28 @@
     <div class="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:grid-rows-2">
       <a href="products.html" class="reveal group relative block overflow-hidden rounded-3xl lg:row-span-2 lg:col-span-1">
         <div class="img-reveal aspect-[3/4] lg:aspect-auto lg:h-full overflow-hidden">
-          <img src="../assets/images/p17.jpg" alt="Belgian Dark Truffles" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" />
+          <img src="assets/images/p17.jpg" alt="Belgian Dark Truffles" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" />
         </div>
         <div class="absolute inset-0 bg-gradient-to-t from-ink/85 via-transparent to-transparent"></div>
         <span class="absolute inset-x-5 bottom-5 font-display text-lg font-semibold text-cream">Belgian Dark Truffles</span>
       </a>
       <a href="products.html" class="reveal group relative block overflow-hidden rounded-3xl">
         <div class="img-reveal aspect-[4/4] overflow-hidden">
-          <img src="../assets/images/p18.jpg" alt="Rustic Sourdough" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" />
+          <img src="assets/images/p18.jpg" alt="Rustic Sourdough" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" />
         </div>
         <div class="absolute inset-0 bg-gradient-to-t from-ink/85 via-transparent to-transparent"></div>
         <span class="absolute inset-x-5 bottom-5 font-display text-lg font-semibold text-cream">Rustic Sourdough</span>
       </a>
       <a href="products.html" class="reveal group relative block overflow-hidden rounded-3xl">
         <div class="img-reveal aspect-[4/4] overflow-hidden">
-          <img src="../assets/images/p19.jpg" alt="Rosewater Macarons" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" />
+          <img src="assets/images/p19.jpg" alt="Rosewater Macarons" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" />
         </div>
         <div class="absolute inset-0 bg-gradient-to-t from-ink/85 via-transparent to-transparent"></div>
         <span class="absolute inset-x-5 bottom-5 font-display text-lg font-semibold text-cream">Rosewater Macarons</span>
       </a>
       <a href="products.html" class="reveal group relative block overflow-hidden rounded-3xl sm:col-span-2">
         <div class="img-reveal aspect-[16/9] overflow-hidden">
-          <img src="../assets/images/p20.jpg" alt="Celebration Cakes" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" />
+          <img src="assets/images/p20.jpg" alt="Celebration Cakes" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" />
         </div>
         <div class="absolute inset-0 bg-gradient-to-t from-ink/85 via-transparent to-transparent"></div>
         <span class="absolute inset-x-5 bottom-5 font-display text-lg font-semibold text-cream">Celebration Cakes</span>
@@ -842,7 +842,7 @@
                         type="button"
                         role="tab"
                         data-showcase-tab="sweets"
-                        data-img="../assets/images/p21.jpg"
+                        data-img="assets/images/p21.jpg"
                         data-desc="Slow-cooked traditional sweets finished with real ghee, saffron and pistachio."
                         class="showcase-tab
                                group
@@ -949,7 +949,7 @@
                         type="button"
                         role="tab"
                         data-showcase-tab="bakery"
-                        data-img="../assets/images/p22.jpg"
+                        data-img="assets/images/p22.jpg"
                         data-desc="Flaky pastries, buttery croissants and oven-fresh breads baked in small batches every day."
                         class="showcase-tab
                                group
@@ -1058,7 +1058,7 @@
                         type="button"
                         role="tab"
                         data-showcase-tab="chocolates"
-                        data-img="../assets/images/p23.jpg"
+                        data-img="assets/images/p23.jpg"
                         data-desc="Single-origin chocolate crafted in-house, tempered carefully and finished by hand."
                         class="showcase-tab
                                group
@@ -1167,7 +1167,7 @@
                         type="button"
                         role="tab"
                         data-showcase-tab="giftboxes"
-                        data-img="../assets/images/p24.jpg"
+                        data-img="assets/images/p24.jpg"
                         data-desc="Thoughtfully curated sweet and dry-fruit collections, wrapped beautifully for every celebration."
                         class="showcase-tab
                                group
@@ -1293,7 +1293,7 @@
 
                     <img
                         data-showcase-image
-                        src="../assets/images/p21.jpg"
+                        src="assets/images/p21.jpg"
                         alt="Traditional bakery sweets"
                         class="h-[340px]
                                w-full
@@ -1409,14 +1409,14 @@
 <!-- ============================================================ -->
 <section class="py-16 lg:py-24 bg-cream/40 dark:bg-surfacedark/40" aria-label="Artisanal pairing guide">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div class="reveal flex flex-col items-center gap-3 text-center">
+    <div class="reveal flex flex-col items-start text-start max-w-3xl">
       <span class="inline-flex items-center gap-2 rounded-full bg-berry/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-berry dark:bg-gold/15 dark:text-gold-light">
         <span class="h-1.5 w-1.5 rounded-full bg-current"></span>Sommelier &amp; Baker Notes
       </span>
-      <h2 class="font-display text-3xl font-semibold leading-tight text-black dark:text-white sm:text-4xl lg:text-5xl">
+      <h2 class="mt-4 font-display text-3xl font-semibold leading-tight text-black dark:text-white sm:text-4xl lg:text-5xl">
         The Tasting Room: Perfect Pairings
       </h2>
-      <p class="max-w-2xl text-sm leading-relaxed text-ink/70 dark:text-cream/70 sm:text-base">
+      <p class="mt-4 max-w-2xl text-sm leading-relaxed text-ink/75 dark:text-cream/75 sm:text-base">
         Baking is only half the story. Discover how our head bakers pair slow-ferment sourdoughs, laminated viennoiserie, and delicate confections with bespoke brews and spreads.
       </p>
     </div>
@@ -1425,7 +1425,7 @@
       <!-- PAIRING CARD 1 -->
       <div class="reveal group flex flex-col overflow-hidden rounded-3xl border border-ink/10 bg-white shadow-warm transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl dark:border-white/10 dark:bg-surfacedark">
         <div class="relative h-56 w-full overflow-hidden">
-          <img src="../assets/images/p30.jpg" alt="Rustic Sourdough Boule and Cultured Butter" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" />
+          <img src="assets/images/p30.jpg" alt="Rustic Sourdough Boule and Cultured Butter" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" />
           <span class="absolute top-3 start-3 rounded-full bg-ink/75 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-cream backdrop-blur-sm">
             Heritage Pair
           </span>
@@ -1436,13 +1436,13 @@
             <span>&bull;</span>
             <span>Artisan Spread</span>
           </div>
-          <h3 class="mt-2 font-display text-xl font-bold text-ink dark:text-cream">
+          <h3 class="mt-2.5 font-display text-lg lg:text-xl font-bold text-ink dark:text-cream leading-snug min-h-[3.5rem] flex items-start">
             Country Boule &amp; Whipped Sea-Salt Butter
           </h3>
-          <p class="mt-2 text-xs leading-relaxed text-ink/70 dark:text-cream/70">
+          <p class="mt-2 text-xs leading-relaxed text-ink/70 dark:text-cream/70 flex-1">
             48-hour wild-ferment crumb with a caramelized blistered crust, paired with grass-fed European churn whipped with crunchy Maldon flakes.
           </p>
-          <div class="mt-4 pt-4 border-t border-ink/5 dark:border-white/5">
+          <div class="mt-auto pt-4 border-t border-ink/5 dark:border-white/5">
             <p class="text-[11px] font-semibold uppercase tracking-wider text-ink/50 dark:text-cream/50">Flavor Profile</p>
             <div class="mt-1.5 flex flex-wrap gap-1.5">
               <span class="rounded-lg bg-gold/15 px-2 py-0.5 text-[10px] font-semibold text-gold-dark dark:text-gold-light">Nutty</span>
@@ -1456,7 +1456,7 @@
       <!-- PAIRING CARD 2 -->
       <div class="reveal group flex flex-col overflow-hidden rounded-3xl border border-ink/10 bg-white shadow-warm transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl dark:border-white/10 dark:bg-surfacedark">
         <div class="relative h-56 w-full overflow-hidden">
-          <img src="../assets/images/p31.jpg" alt="Golden Cardamom Morning Bun and Coffee" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" />
+          <img src="assets/images/p31.jpg" alt="Golden Cardamom Morning Bun and Coffee" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" />
           <span class="absolute top-3 start-3 rounded-full bg-ink/75 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-cream backdrop-blur-sm">
             Morning Ritual
           </span>
@@ -1467,13 +1467,13 @@
             <span>&bull;</span>
             <span>Specialty Brew</span>
           </div>
-          <h3 class="mt-2 font-display text-xl font-bold text-ink dark:text-cream">
+          <h3 class="mt-2.5 font-display text-lg lg:text-xl font-bold text-ink dark:text-cream leading-snug min-h-[3.5rem] flex items-start">
             Cardamom Bun &amp; Ethiopian Pour-Over
           </h3>
-          <p class="mt-2 text-xs leading-relaxed text-ink/70 dark:text-cream/70">
+          <p class="mt-2 text-xs leading-relaxed text-ink/70 dark:text-cream/70 flex-1">
             Hand-rolled Swedish cardamom knot with brown butter crystals, paired with a floral Yirgacheffe coffee bursting with citrus and bergamot.
           </p>
-          <div class="mt-4 pt-4 border-t border-ink/5 dark:border-white/5">
+          <div class="mt-auto pt-4 border-t border-ink/5 dark:border-white/5">
             <p class="text-[11px] font-semibold uppercase tracking-wider text-ink/50 dark:text-cream/50">Flavor Profile</p>
             <div class="mt-1.5 flex flex-wrap gap-1.5">
               <span class="rounded-lg bg-gold/15 px-2 py-0.5 text-[10px] font-semibold text-gold-dark dark:text-gold-light">Aromatic</span>
@@ -1487,7 +1487,7 @@
       <!-- PAIRING CARD 3 -->
       <div class="reveal group flex flex-col overflow-hidden rounded-3xl border border-ink/10 bg-white shadow-warm transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl dark:border-white/10 dark:bg-surfacedark">
         <div class="relative h-56 w-full overflow-hidden">
-          <img src="../assets/images/p32.jpg" alt="Pistachio Raspberry Tart with Tea" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" />
+          <img src="assets/images/p32.jpg" alt="Pistachio Raspberry Tart with Tea" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" />
           <span class="absolute top-3 start-3 rounded-full bg-ink/75 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-cream backdrop-blur-sm">
             Afternoon Tea
           </span>
@@ -1498,13 +1498,13 @@
             <span>&bull;</span>
             <span>Loose Leaf</span>
           </div>
-          <h3 class="mt-2 font-display text-xl font-bold text-ink dark:text-cream">
+          <h3 class="mt-2.5 font-display text-lg lg:text-xl font-bold text-ink dark:text-cream leading-snug min-h-[3.5rem] flex items-start">
             Pistachio Tart &amp; First-Flush Darjeeling
           </h3>
-          <p class="mt-2 text-xs leading-relaxed text-ink/70 dark:text-cream/70">
+          <p class="mt-2 text-xs leading-relaxed text-ink/70 dark:text-cream/70 flex-1">
             Bronte pistachio frangipane with tart berry reduction, served alongside a muscatel-noted spring Himalayan black tea.
           </p>
-          <div class="mt-4 pt-4 border-t border-ink/5 dark:border-white/5">
+          <div class="mt-auto pt-4 border-t border-ink/5 dark:border-white/5">
             <p class="text-[11px] font-semibold uppercase tracking-wider text-ink/50 dark:text-cream/50">Flavor Profile</p>
             <div class="mt-1.5 flex flex-wrap gap-1.5">
               <span class="rounded-lg bg-gold/15 px-2 py-0.5 text-[10px] font-semibold text-gold-dark dark:text-gold-light">Floral</span>
@@ -1518,7 +1518,7 @@
       <!-- PAIRING CARD 4 -->
       <div class="reveal group flex flex-col overflow-hidden rounded-3xl border border-ink/10 bg-white shadow-warm transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl dark:border-white/10 dark:bg-surfacedark">
         <div class="relative h-56 w-full overflow-hidden">
-          <img src="../assets/images/p33.jpg" alt="Dark Chocolate Croissant and Spiced Cocoa" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" />
+          <img src="assets/images/p33.jpg" alt="Dark Chocolate Croissant and Spiced Cocoa" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" />
           <span class="absolute top-3 start-3 rounded-full bg-ink/75 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-cream backdrop-blur-sm">
             Decadence
           </span>
@@ -1529,13 +1529,13 @@
             <span>&bull;</span>
             <span>Velvet Elixir</span>
           </div>
-          <h3 class="mt-2 font-display text-xl font-bold text-ink dark:text-cream">
+          <h3 class="mt-2.5 font-display text-lg lg:text-xl font-bold text-ink dark:text-cream leading-snug min-h-[3.5rem] flex items-start">
             Pain au Chocolat &amp; Spiced Aztec Cocoa
           </h3>
-          <p class="mt-2 text-xs leading-relaxed text-ink/70 dark:text-cream/70">
+          <p class="mt-2 text-xs leading-relaxed text-ink/70 dark:text-cream/70 flex-1">
             Double-baton Valrhona 70% dark chocolate wrapped in 27 honeycomb layers, paired with a rich cinnamon-infused hot drinking chocolate.
           </p>
-          <div class="mt-4 pt-4 border-t border-ink/5 dark:border-white/5">
+          <div class="mt-auto pt-4 border-t border-ink/5 dark:border-white/5">
             <p class="text-[11px] font-semibold uppercase tracking-wider text-ink/50 dark:text-cream/50">Flavor Profile</p>
             <div class="mt-1.5 flex flex-wrap gap-1.5">
               <span class="rounded-lg bg-gold/15 px-2 py-0.5 text-[10px] font-semibold text-gold-dark dark:text-gold-light">Bittersweet</span>
@@ -1564,19 +1564,19 @@
     <div class="mt-16 flex flex-col items-center gap-8 sm:flex-row sm:justify-center sm:gap-6 lg:gap-10">
       <a href="festive-gift-boxes.html" class="reveal group relative block w-full max-w-[280px] -rotate-2 transition-transform duration-500 hover:rotate-0 hover:z-10">
         <div class="img-reveal aspect-[3/4] overflow-hidden rounded-[1.75rem] border-8 border-creamsoft shadow-warm dark:border-surfacedark">
-          <img src="../assets/images/p25.jpg" alt="Diwali Collection" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
+          <img src="assets/images/p25.jpg" alt="Diwali Collection" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
         </div>
         <p class="mt-4 text-center font-display text-base font-semibold text-black dark:text-white">Diwali Collection</p>
       </a>
       <a href="festive-gift-boxes.html" class="reveal group relative block w-full max-w-[280px] rotate-1 transition-transform duration-500 hover:rotate-0 hover:z-10 sm:-translate-y-6">
         <div class="img-reveal aspect-[3/4] overflow-hidden rounded-[1.75rem] border-8 border-creamsoft shadow-warm dark:border-surfacedark">
-          <img src="../assets/images/p26.jpg" alt="Christmas Collection" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
+          <img src="assets/images/p26.jpg" alt="Christmas Collection" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
         </div>
         <p class="mt-4 text-center font-display text-base font-semibold text-black dark:text-white">Christmas Collection</p>
       </a>
       <a href="festive-gift-boxes.html" class="reveal group relative block w-full max-w-[280px] -rotate-1 transition-transform duration-500 hover:rotate-0 hover:z-10">
         <div class="img-reveal aspect-[3/4] overflow-hidden rounded-[1.75rem] border-8 border-creamsoft shadow-warm dark:border-surfacedark">
-          <img src="../assets/images/p27.jpg" alt="Eid Collection" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
+          <img src="assets/images/p27.jpg" alt="Eid Collection" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
         </div>
         <p class="mt-4 text-center font-display text-base font-semibold text-black dark:text-white">Eid Collection</p>
       </a>
@@ -1601,7 +1601,7 @@
         <h2 class="mt-5 font-display text-3xl font-semibold leading-tight text-black dark:text-white sm:text-4xl">A single morning, from starter to shelf.</h2>
         <p class="mt-5 max-w-md text-sm leading-relaxed text-black dark:text-white sm:text-base">Every batch follows the same unhurried timeline &mdash; because good bread and honest sweets can't be rushed, no matter how busy the counter gets.</p>
         <div class="img-reveal mt-8 overflow-hidden rounded-[2rem] shadow-warm">
-          <img src="../assets/images/p28.jpg" alt="Bakery display case with fresh pastries" class="h-64 w-full object-cover" loading="lazy" />
+          <img src="assets/images/p28.jpg" alt="Bakery display case with fresh pastries" class="h-64 w-full object-cover" loading="lazy" />
         </div>
       </div>
       <div class="relative space-y-10 ps-8">
@@ -1665,7 +1665,7 @@
       <!-- WORKSHOP 1 -->
       <div class="reveal group relative flex flex-col overflow-hidden rounded-[2rem] border border-ink/10 bg-white p-6 shadow-warm transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl dark:border-white/10 dark:bg-surfacedark">
         <div class="relative h-60 w-full overflow-hidden rounded-2xl">
-          <img src="../assets/images/p34.jpg" alt="Artisan kneading sourdough dough" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+          <img src="assets/images/p34.jpg" alt="Artisan kneading sourdough dough" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
           <div class="absolute inset-0 bg-gradient-to-t from-ink/60 via-transparent to-transparent"></div>
           <div class="absolute bottom-3 start-3 flex items-center gap-2">
             <span class="rounded-full bg-cream/90 px-3 py-1 text-xs font-bold text-berry backdrop-blur-sm">Sat Mornings</span>
@@ -1698,7 +1698,7 @@
       <!-- WORKSHOP 2 -->
       <div class="reveal group relative flex flex-col overflow-hidden rounded-[2rem] border border-ink/10 bg-white p-6 shadow-warm transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl dark:border-white/10 dark:bg-surfacedark">
         <div class="relative h-60 w-full overflow-hidden rounded-2xl">
-          <img src="../assets/images/p35.jpg" alt="Laminating butter croissant dough" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+          <img src="assets/images/p35.jpg" alt="Laminating butter croissant dough" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
           <div class="absolute inset-0 bg-gradient-to-t from-ink/60 via-transparent to-transparent"></div>
           <div class="absolute bottom-3 start-3 flex items-center gap-2">
             <span class="rounded-full bg-cream/90 px-3 py-1 text-xs font-bold text-berry backdrop-blur-sm">Sun Mornings</span>
@@ -1731,7 +1731,7 @@
       <!-- WORKSHOP 3 -->
       <div class="reveal group relative flex flex-col overflow-hidden rounded-[2rem] border border-ink/10 bg-white p-6 shadow-warm transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl dark:border-white/10 dark:bg-surfacedark">
         <div class="relative h-60 w-full overflow-hidden rounded-2xl">
-          <img src="../assets/images/p36.jpg" alt="Piping delicate festive macarons" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+          <img src="assets/images/p36.jpg" alt="Piping delicate festive macarons" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
           <div class="absolute inset-0 bg-gradient-to-t from-ink/60 via-transparent to-transparent"></div>
           <div class="absolute bottom-3 start-3 flex items-center gap-2">
             <span class="rounded-full bg-cream/90 px-3 py-1 text-xs font-bold text-berry backdrop-blur-sm">Fri Evenings</span>
@@ -1786,7 +1786,7 @@
       <!-- INGREDIENT 1 -->
       <div class="reveal group rounded-3xl border border-ink/10 bg-white/60 p-6 backdrop-blur-sm transition-all hover:bg-white hover:shadow-warm dark:border-white/10 dark:bg-white/5 dark:hover:bg-white/10">
         <div class="relative h-44 w-full overflow-hidden rounded-2xl">
-          <img src="../assets/images/p37.jpg" alt="Organic stone ground wheat fields" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+          <img src="assets/images/p37.jpg" alt="Organic stone ground wheat fields" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
           <span class="absolute bottom-2.5 start-2.5 rounded-full bg-ink/80 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-cream">Origin: Punjab Plains</span>
         </div>
         <h3 class="mt-4 font-display text-xl font-bold text-ink dark:text-cream">Stone-Milled Heritage Wheat</h3>
@@ -1798,7 +1798,7 @@
       <!-- INGREDIENT 2 -->
       <div class="reveal group rounded-3xl border border-ink/10 bg-white/60 p-6 backdrop-blur-sm transition-all hover:bg-white hover:shadow-warm dark:border-white/10 dark:bg-white/5 dark:hover:bg-white/10">
         <div class="relative h-44 w-full overflow-hidden rounded-2xl">
-          <img src="../assets/images/p38.jpg" alt="Grass-fed cultured churned butter" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+          <img src="assets/images/p38.jpg" alt="Grass-fed cultured churned butter" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
           <span class="absolute bottom-2.5 start-2.5 rounded-full bg-ink/80 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-cream">Origin: Nilgiri Dairy</span>
         </div>
         <h3 class="mt-4 font-display text-xl font-bold text-ink dark:text-cream">84% Butterfat Cultured Butter</h3>
@@ -1810,7 +1810,7 @@
       <!-- INGREDIENT 3 -->
       <div class="reveal group rounded-3xl border border-ink/10 bg-white/60 p-6 backdrop-blur-sm transition-all hover:bg-white hover:shadow-warm dark:border-white/10 dark:bg-white/5 dark:hover:bg-white/10">
         <div class="relative h-44 w-full overflow-hidden rounded-2xl">
-          <img src="../assets/images/p39.jpg" alt="Single origin cacao beans" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+          <img src="assets/images/p39.jpg" alt="Single origin cacao beans" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
           <span class="absolute bottom-2.5 start-2.5 rounded-full bg-ink/80 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-cream">Origin: Idukki Valley</span>
         </div>
         <h3 class="mt-4 font-display text-xl font-bold text-ink dark:text-cream">Single-Estate 70% Dark Cacao</h3>
@@ -1822,7 +1822,7 @@
       <!-- INGREDIENT 4 -->
       <div class="reveal group rounded-3xl border border-ink/10 bg-white/60 p-6 backdrop-blur-sm transition-all hover:bg-white hover:shadow-warm dark:border-white/10 dark:bg-white/5 dark:hover:bg-white/10">
         <div class="relative h-44 w-full overflow-hidden rounded-2xl">
-          <img src="../assets/images/p40.jpg" alt="Pure raw wildflower honeycomb" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+          <img src="assets/images/p40.jpg" alt="Pure raw wildflower honeycomb" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
           <span class="absolute bottom-2.5 start-2.5 rounded-full bg-ink/80 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-cream">Origin: Western Ghats</span>
         </div>
         <h3 class="mt-4 font-display text-xl font-bold text-ink dark:text-cream">Wildflower Raw Forest Honey</h3>
@@ -1932,7 +1932,7 @@
 <!-- ============================================================ -->
 <section class="relative overflow-hidden py-24 lg:py-36" aria-label="Call to action">
   <div class="absolute inset-0">
-    <img src="../assets/images/p29.jpg" alt="Bakery shelf lined with fresh bread" class="h-full w-full object-cover" loading="lazy" />
+    <img src="assets/images/p29.jpg" alt="Bakery shelf lined with fresh bread" class="h-full w-full object-cover" loading="lazy" />
     <div class="absolute inset-0 bg-ink/50"></div>
   </div>
   <div class="relative mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">

@@ -183,15 +183,32 @@
     var iconClose = doc.getElementById('menu-icon-close');
     if (!btn || !menu) return;
 
+    function openMenu() {
+      menu.classList.remove('hidden');
+      btn.setAttribute('aria-expanded', 'true');
+      btn.setAttribute('aria-label', 'Close menu');
+      if (iconOpen && iconClose) {
+        iconOpen.classList.add('hidden');
+        iconClose.classList.remove('hidden');
+      }
+      doc.body.classList.add('overflow-hidden');
+    }
+
+    function closeMenu() {
+      menu.classList.add('hidden');
+      btn.setAttribute('aria-expanded', 'false');
+      btn.setAttribute('aria-label', 'Open menu');
+      if (iconOpen && iconClose) {
+        iconOpen.classList.remove('hidden');
+        iconClose.classList.add('hidden');
+      }
+      doc.body.classList.remove('overflow-hidden');
+    }
+
     function toggleMenu() {
       var isOpen = !menu.classList.contains('hidden');
-      menu.classList.toggle('hidden');
-      btn.setAttribute('aria-expanded', String(!isOpen));
-      if (iconOpen && iconClose) {
-        iconOpen.classList.toggle('hidden', !isOpen);
-        iconClose.classList.toggle('hidden', isOpen);
-      }
-      doc.body.classList.toggle('overflow-hidden', !isOpen);
+      if (isOpen) closeMenu();
+      else openMenu();
     }
     btn.addEventListener('click', toggleMenu);
 
@@ -199,7 +216,8 @@
     var homeSubmenu = doc.getElementById('mobile-home-submenu');
     var homeChevron = doc.getElementById('mobile-home-chevron');
     if (homeToggle && homeSubmenu) {
-      homeToggle.addEventListener('click', function () {
+      homeToggle.addEventListener('click', function (e) {
+        e.stopPropagation();
         var isHidden = homeSubmenu.classList.contains('hidden');
         homeSubmenu.classList.toggle('hidden');
         homeToggle.setAttribute('aria-expanded', String(isHidden));
@@ -210,8 +228,22 @@
     // Close menu when a link inside it is clicked (keeps navigation snappy).
     menu.querySelectorAll('a').forEach(function (link) {
       link.addEventListener('click', function () {
-        if (!menu.classList.contains('hidden')) toggleMenu();
+        closeMenu();
       });
+    });
+
+    // Close on Escape key
+    doc.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && !menu.classList.contains('hidden')) {
+        closeMenu();
+      }
+    });
+
+    // Close when resized to desktop breakpoint
+    window.addEventListener('resize', function () {
+      if (window.innerWidth >= 1280 && !menu.classList.contains('hidden')) {
+        closeMenu();
+      }
     });
   }
 

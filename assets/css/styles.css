@@ -106,7 +106,7 @@ textarea:focus-visible {
   white-space: nowrap;
 }
 
-@media (min-width: 1024px) and (max-width: 1279px) {
+@media (max-width: 1279px) {
   #site-header nav[aria-label='Primary'] {
     display: none !important;
   }
@@ -114,10 +114,33 @@ textarea:focus-visible {
   #mobile-menu-btn {
     display: inline-flex !important;
   }
+}
 
-  #mobile-menu:not(.hidden) {
-    display: block;
+@media (min-width: 1280px) {
+  #mobile-menu-btn {
+    display: none !important;
   }
+
+  #mobile-menu {
+    display: none !important;
+  }
+}
+
+#mobile-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  max-height: calc(100vh - 70px);
+  max-height: calc(100dvh - 70px);
+  overflow-y: auto;
+  box-shadow: 0 24px 48px -12px rgba(42, 24, 16, 0.25);
+  border-bottom: 1px solid rgba(42, 24, 16, 0.08);
+}
+
+.dark #mobile-menu {
+  box-shadow: 0 24px 48px -12px rgba(0, 0, 0, 0.6);
+  border-bottom-color: rgba(255, 255, 255, 0.08);
 }
 
 #dark-toggle {
